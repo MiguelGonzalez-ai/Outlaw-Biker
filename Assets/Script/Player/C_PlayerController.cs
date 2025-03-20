@@ -1,6 +1,7 @@
 using UnityEngine;
 
-//Clase maneja entradas de movimiento del jugador
+//Clase maneja entradas de movimiento del jugador 2
+//Prueba Git
 public class C_PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
