@@ -5,6 +5,7 @@ public class C_PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     float XInput;
+    float prueba;
     float YInput;
     [SerializeField] GameObject FinalHeight; //Altura del final del nivel
     [SerializeField] float Speed; //Velocidad jugador
