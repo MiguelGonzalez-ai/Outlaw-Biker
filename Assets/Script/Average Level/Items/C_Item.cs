@@ -3,11 +3,12 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 
 public class C_Item : MonoBehaviour
 {
+    protected GameObject Management;
+    protected C_Managment AccessManagement;
     [SerializeField] protected float Amplitude;
     [SerializeField] protected float RunningTime;
     [SerializeField] protected float TimeConstant;
-    protected GameObject Management;
-    protected C_Managment AccessManagement;
+    
     private void Start()
     {
         Management = FindFirstObjectByType<C_Managment>().gameObject;

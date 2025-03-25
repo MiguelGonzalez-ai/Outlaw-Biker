@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class C_EnemyWeakness : MonoBehaviour
 {
-    [SerializeField] float SpeedBounce;
+    [SerializeField] private float SpeedBounce;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

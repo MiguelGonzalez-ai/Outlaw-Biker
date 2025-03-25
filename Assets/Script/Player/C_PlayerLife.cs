@@ -4,14 +4,14 @@ using UnityEngine.UI;
 
 public class C_PlayerLife : MonoBehaviour
 {
-    enum ELevelPlayer
+    private enum ELevelPlayer
     {
-        LP_AverageLevel,
-        LP_BossLevel
+        ELP_AverageLevel,
+        ELP_BossLevel
     }
-    Vector2 Spawn;
-    [SerializeField] ELevelPlayer CurrentLevel;
-    public Image PlayerLife;
+    private Vector2 Spawn;
+    [SerializeField] private ELevelPlayer CurrentLevel;
+    [SerializeField] private Image PlayerLife;
 
 
     void Start()
@@ -33,11 +33,11 @@ public class C_PlayerLife : MonoBehaviour
     {
         switch (CurrentLevel)
         {
-            case ELevelPlayer.LP_AverageLevel:
+            case ELevelPlayer.ELP_AverageLevel:
                 transform.position = Spawn;
                 PlayerLife.fillAmount = 1;
                 break;
-            case ELevelPlayer.LP_BossLevel:
+            case ELevelPlayer.ELP_BossLevel:
                 Destroy(gameObject);
                 break;
         }

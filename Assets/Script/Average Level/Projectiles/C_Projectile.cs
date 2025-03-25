@@ -3,11 +3,17 @@ using UnityEngine;
 
 public class C_Projectile : MonoBehaviour
 {
+    private int Side;
     protected Rigidbody2D rb;
     [SerializeField] protected float WaitTime;
     [SerializeField] protected float SpeedX;
     [SerializeField] protected float SpeedY;
-    public int Side;
+
+    /*
+     * Getters y Setters
+     */
+    public void SetProjectileSide(int SideEnemy) { Side = SideEnemy; }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class C_EnemyContact : MonoBehaviour
 {
-    C_EnemyController Contact;
-    [SerializeField] GameObject Enemy; //Enemigo instanciado en el inspector
+    private C_EnemyController Contact;
+    [SerializeField] private GameObject Enemy; //Enemigo instanciado en el inspector
     void Start()
     {
         if(Enemy != null)
@@ -17,7 +17,7 @@ public class C_EnemyContact : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Contact.Contact = true;
+            Contact.SetEnemyContact(true);
 
         }
     }
@@ -25,7 +25,7 @@ public class C_EnemyContact : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Contact.Contact = false;
+            Contact.SetEnemyContact(false);
         }
     }
 }

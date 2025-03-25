@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class C_PlayerProjectile : C_Projectile
 {
-    GameObject Boss;
-    C_BossLife BossLife;
-    [SerializeField] float Damage;
+    private GameObject Boss;
+    private C_BossLife BossLife;
+    [SerializeField] private float Damage;
     void Start()
     {
         Boss = FindFirstObjectByType<C_BossLife>().gameObject;

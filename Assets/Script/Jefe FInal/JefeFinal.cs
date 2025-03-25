@@ -84,8 +84,8 @@ public class JefeFinal : MonoBehaviour
     {
 
         if (contacto) { 
-            ProyectilJefeFinal proyectilAux = Instantiate(proyectil, fase1.position, Quaternion.identity).GetComponent<ProyectilJefeFinal>();
-            proyectilAux.trayectoriaProyectil = Trayectoria;
+            //ProyectilJefeFinal proyectilAux = Instantiate(proyectil, fase1.position, Quaternion.identity).GetComponent<ProyectilJefeFinal>();
+            //proyectilAux.trayectoriaProyectil = Trayectoria;
             contadorProyectiles++;
         }
     }

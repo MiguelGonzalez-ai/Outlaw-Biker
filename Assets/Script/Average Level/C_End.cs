@@ -9,9 +9,9 @@ public class C_End : MonoBehaviour
      *
      */
 
-    GameObject Player;
-    C_PlayerController Movement;
-    [SerializeField] GameObject WinningText;
+    private GameObject Player;
+    private C_PlayerController Movement;
+    [SerializeField] private GameObject WinningText;
 
     void Start()
     {
@@ -30,7 +30,7 @@ public class C_End : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Movement.Winner = true;
+            Movement.SetPlayersWinner(true);
             WinningText.SetActive(true);
         }
     }

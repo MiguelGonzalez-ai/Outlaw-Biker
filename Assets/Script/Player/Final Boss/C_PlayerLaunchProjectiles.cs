@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class C_PlayerLaunchProjectiles : MonoBehaviour
 {
-    C_PlayerController SidePlayer;
-    [SerializeField] Transform LaunchPosition;
-    [SerializeField] GameObject PlayerProjectiles;
-    public int CounterProjectiles;
+    private C_PlayerController SidePlayer;
+    private int CounterProjectiles;
+    [SerializeField] private Transform LaunchPosition;
+    [SerializeField] private GameObject PlayerProjectiles;
+
+    /*
+     * Getters y setters
+     */
+    public void SetPlayersCounterProjectiles(int Amount) { CounterProjectiles = Amount; }
 
     void Start()
     {
         CounterProjectiles = 0;
-        SidePlayer = GetComponent<C_PlayerController>();
+        if(GetComponent<C_PlayerController>() != null)
+        {
+            SidePlayer = GetComponent<C_PlayerController>();
+        }
     }
 
     // Update is called once per frame
@@ -27,6 +35,6 @@ public class C_PlayerLaunchProjectiles : MonoBehaviour
         CounterProjectiles = Mathf.Clamp(CounterProjectiles - 1, 0, 20);
         GameObject PlayerProjectiles2 = Instantiate(PlayerProjectiles, LaunchPosition.position, Quaternion.identity);
         C_PlayerProjectile Access = PlayerProjectiles2.GetComponent<C_PlayerProjectile>();
-        Access.Side = SidePlayer.Side;
+        Access.SetProjectileSide(SidePlayer.GetPlayerSide());
     }
 }
