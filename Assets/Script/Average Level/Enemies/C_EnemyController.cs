@@ -2,42 +2,55 @@ using UnityEngine;
 
 public class C_EnemyController : MonoBehaviour
 {
-    int Side;
-    int Aux; //Permite que solo entre al condicional una sola vez
+    private enum EEnemyState
+    {
+        EES_Idle,
+        EES_Turning,
+        EES_Attacking
+    }
+    private int Side;
+    [SerializeField] private bool Contact;
+    [SerializeField] private bool Behind;
+    [SerializeField] private EEnemyState EnemyState;
     [SerializeField] GameObject Projectile;
     [SerializeField] Transform LaunchPosition;
-    public bool Contact;
-    public bool Behind;
+
+    /*
+     * Getters y setters
+     */
+    public void SetEnemysBehind(bool BehindEnemy) { Behind = BehindEnemy; }
+    public void SetEnemyContact(bool ContactEnemy) { Contact = ContactEnemy; }
+
 
     void Start()
     {
         Contact = false;
         Behind = false;
         Side = -1;
-        Aux = 0;
+        EnemyState = EEnemyState.EES_Idle;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Contact && Aux == 0) //Si el enemigo tiene contacto visual con el jugador (True), empieza a lanzar projectiles despues de 2 seg, cada 2 seg
+        if(Contact && EnemyState == EEnemyState.EES_Idle) //Si el enemigo tiene contacto visual y se encuentra inactivo, ataca
         {
-            Aux = 1;
+            EnemyState = EnemyState = EEnemyState.EES_Attacking;
             InvokeRepeating("SpawnProjectile", 2f, 2f);
         }
-        else if(!Contact && Aux == 1) //Si el enemigo ya no tiene contacto visual (false), dejara de lanzar
+        else if(!Contact && EnemyState == EEnemyState.EES_Attacking) //Si el enemigo ya no tiene contacto visual y esta atacando, dejara de hacerlo
         {
-            Aux = 0;
+            EnemyState = EEnemyState.EES_Idle;
             CancelInvoke("SpawnProjectile");
         }
-        if(Behind && Aux == 0) //Si el enemigo sabe que el jugador esta atras de el, se volteara
+        if(Behind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
         {
-            Aux = 2; 
+            EnemyState = EEnemyState.EES_Turning; 
             ChangeSide();
         }
-        else if(!Behind && Aux == 2) //Restablecera al enemigo si volteo, para que pueda lanzar
+        else if(!Behind && EnemyState == EEnemyState.EES_Turning) //Si el jugador ya no se encuentra atras y el jugador volteo, quedara inactivo
         {
-            Aux = 0;
+            EnemyState = EEnemyState.EES_Idle;
         }
     }
 
@@ -51,6 +64,6 @@ public class C_EnemyController : MonoBehaviour
     {
         GameObject Projectile2 = Instantiate(Projectile, LaunchPosition.position, Quaternion.identity);
         C_EnemysProjectile SideProjectile2 = Projectile2.GetComponent<C_EnemysProjectile>();
-        SideProjectile2.Side = Side;
+        SideProjectile2.SetProjectileSide(Side);
     }
 }

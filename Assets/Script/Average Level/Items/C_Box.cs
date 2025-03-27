@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class C_Box : C_Item
 {
-    GameObject Player;
-    C_PlayerLaunchProjectiles Counter;
+    private GameObject Player;
+    private C_PlayerLaunchProjectiles Counter;
     void Start()
     {
         Player = FindFirstObjectByType<C_PlayerLaunchProjectiles>().gameObject;
@@ -33,7 +33,7 @@ public class C_Box : C_Item
     {
         if (collision.gameObject.tag == "Player")
         {
-            Counter.CounterProjectiles += 5;
+            Counter.SetPlayersCounterProjectiles(5);
             Destroy(gameObject);
         }
     }

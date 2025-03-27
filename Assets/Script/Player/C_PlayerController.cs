@@ -1,19 +1,25 @@
 using UnityEngine;
 
-//Clase maneja entradas de movimiento del jugador 2
-//Prueba Git
+//Clase maneja entradas de movimiento del jugador
 public class C_PlayerController : MonoBehaviour
 {
-    Rigidbody2D rb;
-    float XInput;
-    float YInput;
+    private Rigidbody2D rb;
+    private float XInput; //Entradas valores en X
+    private int Side; //Mira el lado que esta mirando el jugador ( 1 = Der, -1 = Izq)
+    private bool Winner; //Comprueba si el jugador gano el nivel
     [SerializeField] GameObject FinalHeight; //Altura del final del nivel
     [SerializeField] float Speed; //Velocidad jugador
     [SerializeField] float JumpForce; //Fuerza de salto
     [SerializeField] Transform GroundTouched; //Suelo tocado
     [SerializeField] LayerMask WhatIsGround; //Donde se puede saltar
-    public int Side; //Mira el lado que esta mirando el jugador ( 1 = Der, -1 = Izq)
-    public bool Winner; //Comprueba si el jugador gano el nivel
+    
+
+    /*
+     * Getters y setters
+     */
+    public int GetPlayerSide() { return Side; }
+    public void SetPlayersWinner(bool End) { Winner =  End; }
+
 
     void Start()
     {

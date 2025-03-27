@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class C_EnemyBehind : MonoBehaviour
 {
-    C_EnemyController Contact;
-    [SerializeField] GameObject Enemy; //Enemigo instanciado en el inspector
+    private C_EnemyController Contact;
+    [SerializeField] private GameObject Enemy; //Enemigo instanciado en el inspector
     void Start()
     {
         if (Enemy != null)
@@ -16,7 +16,7 @@ public class C_EnemyBehind : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Contact.Behind = true;
+            Contact.SetEnemysBehind(true);
 
         }
     }
@@ -24,7 +24,7 @@ public class C_EnemyBehind : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Contact.Behind = false;
+            Contact.SetEnemysBehind(false);
         }
     }
 }

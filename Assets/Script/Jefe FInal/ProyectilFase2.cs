@@ -5,12 +5,12 @@ public class ProyectilFase2 : MonoBehaviour
 {
     Rigidbody2D rb;
     GameObject jugador;
-    controladorJugador vida;
+    //controladorJugador vida;
 
     void Start()
     {
-        jugador = FindFirstObjectByType<controladorJugador>().gameObject;
-        vida = jugador.GetComponent<controladorJugador>();
+        //jugador = FindFirstObjectByType<controladorJugador>().gameObject;
+       // vida = jugador.GetComponent<controladorJugador>();
         rb = GetComponent<Rigidbody2D>();     
         rb.linearVelocity = transform.right * 20;
     }
@@ -19,7 +19,7 @@ public class ProyectilFase2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Jugador")
         {
-            vida.vidaJugador.fillAmount = Mathf.Clamp(vida.vidaJugador.fillAmount - 0.33f, 0f, 1f);
+            //vida.vidaJugador.fillAmount = Mathf.Clamp(vida.vidaJugador.fillAmount - 0.33f, 0f, 1f);
             Destroy(gameObject);
 
         }

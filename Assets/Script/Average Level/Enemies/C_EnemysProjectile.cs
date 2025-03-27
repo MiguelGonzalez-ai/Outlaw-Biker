@@ -2,17 +2,17 @@
 using UnityEngine;
 using static Unity.Burst.Intrinsics.X86;
 
+/*
+* 
+* --------Explicacion Clase--------
+* Lanza el projectile segun el lado y su velocidad
+*
+*/
 public class C_EnemysProjectile : C_Projectile
 {
-    /*
-     * 
-     * --------Explicacion Clase--------
-     * Lanza el projectile segun el lado y su velocidad
-     *
-     */
-    GameObject Player;
-    C_PlayerLife Life;
-    [SerializeField] float Damage;
+    private GameObject Player;
+    private C_PlayerLife Life;
+    [SerializeField] private float Damage;
     
 
     void Start()
@@ -24,11 +24,6 @@ public class C_EnemysProjectile : C_Projectile
         {
             Life = Player.GetComponent<C_PlayerLife>();
             StartCoroutine(Launch(WaitTime));
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ No se encontró ningún objeto con C_PlayerLife en la escena.");
-            Destroy(gameObject);
         }
     }
 
@@ -46,7 +41,6 @@ public class C_EnemysProjectile : C_Projectile
         {
             Life.TakingDamage(Damage);
             Destroy(gameObject);
-
         }
     }
 
