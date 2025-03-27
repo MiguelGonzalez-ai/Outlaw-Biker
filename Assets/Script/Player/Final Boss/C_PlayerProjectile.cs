@@ -24,13 +24,13 @@ public class C_PlayerProjectile : C_Projectile
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Boss")
+        if (collision.CompareTag("Boss"))
         {
             BossLife.TakingDamage(Damage);
             Destroy(gameObject);
 
         }
-        if (collision.gameObject.tag == "Ground")
+        if (collision.CompareTag("Ground"))
         {
             Destroy(gameObject);
 

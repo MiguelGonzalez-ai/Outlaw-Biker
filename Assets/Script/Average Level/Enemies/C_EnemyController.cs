@@ -22,7 +22,7 @@ public class C_EnemyController : MonoBehaviour
     public void SetEnemyContact(bool ContactEnemy) { Contact = ContactEnemy; }
 
 
-    void Start()
+    void Awake()
     {
         Contact = false;
         Behind = false;
@@ -33,22 +33,32 @@ public class C_EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Contact && EnemyState == EEnemyState.EES_Idle) //Si el enemigo tiene contacto visual y se encuentra inactivo, ataca
+        Attacking();
+        Turning();
+    }
+
+    private void Attacking()
+    {
+        if (Contact && EnemyState == EEnemyState.EES_Idle) //Si el enemigo tiene contacto visual y se encuentra inactivo, ataca
         {
             EnemyState = EnemyState = EEnemyState.EES_Attacking;
             InvokeRepeating("SpawnProjectile", 2f, 2f);
         }
-        else if(!Contact && EnemyState == EEnemyState.EES_Attacking) //Si el enemigo ya no tiene contacto visual y esta atacando, dejara de hacerlo
+        else if (!Contact && EnemyState == EEnemyState.EES_Attacking) //Si el enemigo ya no tiene contacto visual y esta atacando, dejara de hacerlo
         {
             EnemyState = EEnemyState.EES_Idle;
             CancelInvoke("SpawnProjectile");
         }
-        if(Behind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
+    }
+
+    private void Turning()
+    {
+        if (Behind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
         {
-            EnemyState = EEnemyState.EES_Turning; 
+            EnemyState = EEnemyState.EES_Turning;
             ChangeSide();
         }
-        else if(!Behind && EnemyState == EEnemyState.EES_Turning) //Si el jugador ya no se encuentra atras y el jugador volteo, quedara inactivo
+        else if (!Behind && EnemyState == EEnemyState.EES_Turning) //Si el jugador ya no se encuentra atras y el jugador volteo, quedara inactivo
         {
             EnemyState = EEnemyState.EES_Idle;
         }
