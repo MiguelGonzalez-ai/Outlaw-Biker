@@ -6,7 +6,7 @@ public class C_PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private float XInput; //Entradas valores en X
     private int Side; //Mira el lado que esta mirando el jugador ( 1 = Der, -1 = Izq)
-    private bool Winner; //Comprueba si el jugador gano el nivel
+    private bool bWinner; //Comprueba si el jugador gano el nivel
     [SerializeField] GameObject FinalHeight; //Altura del final del nivel
     [SerializeField] float Speed; //Velocidad jugador
     [SerializeField] float JumpForce; //Fuerza de salto
@@ -18,14 +18,14 @@ public class C_PlayerController : MonoBehaviour
      * Getters y setters
      */
     public int GetPlayerSide() { return Side; }
-    public void SetPlayersWinner(bool End) { Winner =  End; }
+    public void SetPlayersWinner(bool End) { bWinner =  End; }
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Side = 1;
-        Winner = false;
+        bWinner = false;
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class C_PlayerController : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (!Winner)
+        if (!bWinner)
         {
             HandleMovement();
         }

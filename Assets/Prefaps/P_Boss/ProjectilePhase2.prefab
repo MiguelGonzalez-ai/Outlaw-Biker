@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1073168464692401167}
-  - component: {fileID: 3498451004879630392}
+  - component: {fileID: 3314342689880256196}
   - component: {fileID: 7458367171147091971}
   - component: {fileID: -4295173645897732}
   - component: {fileID: -5437425823131058171}
   m_Layer: 0
-  m_Name: Bala Goma
+  m_Name: ProjectilePhase2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3498451004879630392
+--- !u!114 &3314342689880256196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,9 +44,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5668186056449919869}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f47fe3543bce6344b414e38632ea7bd, type: 3}
+  m_Script: {fileID: 11500000, guid: d9486f73e77fc604eb701d00f069d347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpeedProjectile: 20
+  Damage: 0.3333
 --- !u!212 &7458367171147091971
 SpriteRenderer:
   m_ObjectHideFlags: 0

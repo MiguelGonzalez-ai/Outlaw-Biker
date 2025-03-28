@@ -9,23 +9,23 @@ public class C_EnemyController : MonoBehaviour
         EES_Attacking
     }
     private int Side;
-    [SerializeField] private bool Contact;
-    [SerializeField] private bool Behind;
+    [SerializeField] private bool bContact;
+    [SerializeField] private bool bBehind;
     [SerializeField] private EEnemyState EnemyState;
-    [SerializeField] GameObject Projectile;
-    [SerializeField] Transform LaunchPosition;
+    [SerializeField] private GameObject Projectile;
+    [SerializeField] private Transform LaunchPosition;
 
     /*
      * Getters y setters
      */
-    public void SetEnemysBehind(bool BehindEnemy) { Behind = BehindEnemy; }
-    public void SetEnemyContact(bool ContactEnemy) { Contact = ContactEnemy; }
+    public void SetEnemysBehind(bool BehindEnemy) { bBehind = BehindEnemy; }
+    public void SetEnemyContact(bool ContactEnemy) { bContact = ContactEnemy; }
 
 
     void Awake()
     {
-        Contact = false;
-        Behind = false;
+        bContact = false;
+        bBehind = false;
         Side = -1;
         EnemyState = EEnemyState.EES_Idle;
     }
@@ -39,12 +39,12 @@ public class C_EnemyController : MonoBehaviour
 
     private void Attacking()
     {
-        if (Contact && EnemyState == EEnemyState.EES_Idle) //Si el enemigo tiene contacto visual y se encuentra inactivo, ataca
+        if (bContact && EnemyState == EEnemyState.EES_Idle) //Si el enemigo tiene contacto visual y se encuentra inactivo, ataca
         {
             EnemyState = EnemyState = EEnemyState.EES_Attacking;
             InvokeRepeating("SpawnProjectile", 2f, 2f);
         }
-        else if (!Contact && EnemyState == EEnemyState.EES_Attacking) //Si el enemigo ya no tiene contacto visual y esta atacando, dejara de hacerlo
+        else if (!bContact && EnemyState == EEnemyState.EES_Attacking) //Si el enemigo ya no tiene contacto visual y esta atacando, dejara de hacerlo
         {
             EnemyState = EEnemyState.EES_Idle;
             CancelInvoke("SpawnProjectile");
@@ -53,12 +53,12 @@ public class C_EnemyController : MonoBehaviour
 
     private void Turning()
     {
-        if (Behind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
+        if (bBehind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
         {
             EnemyState = EEnemyState.EES_Turning;
             ChangeSide();
         }
-        else if (!Behind && EnemyState == EEnemyState.EES_Turning) //Si el jugador ya no se encuentra atras y el jugador volteo, quedara inactivo
+        else if (!bBehind && EnemyState == EEnemyState.EES_Turning) //Si el jugador ya no se encuentra atras y el jugador volteo, quedara inactivo
         {
             EnemyState = EEnemyState.EES_Idle;
         }
