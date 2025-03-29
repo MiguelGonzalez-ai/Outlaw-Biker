@@ -8,6 +8,7 @@ TagManager:
   - Management
   - Ground
   - Boss
+  - Ball
   layers:
   - Default
   - TransparentFX

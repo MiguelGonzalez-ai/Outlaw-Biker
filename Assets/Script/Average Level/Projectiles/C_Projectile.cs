@@ -20,12 +20,6 @@ public class C_Projectile : MonoBehaviour
         StartCoroutine(Launch(WaitTime));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     protected virtual IEnumerator Launch(float WaitTime)
     {
 
