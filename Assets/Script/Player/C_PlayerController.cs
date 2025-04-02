@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//pene
 //Clase maneja entradas de movimiento del jugador
 public class C_PlayerController : MonoBehaviour
 {
