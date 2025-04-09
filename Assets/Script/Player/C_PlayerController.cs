@@ -4,7 +4,9 @@ using UnityEngine;
 public class C_PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Animator Animator;
     private float XInput; //Entradas valores en X
+    private float Horizontal; //Entradas en X Vartiable Aux
     private int Side; //Mira el lado que esta mirando el jugador ( 1 = Der, -1 = Izq)
     private bool bWinner; //Comprueba si el jugador gano el nivel
     [SerializeField] GameObject FinalHeight; //Altura del final del nivel
@@ -19,6 +21,7 @@ public class C_PlayerController : MonoBehaviour
      */
     public int GetPlayerSide() { return Side; }
     public void SetPlayersWinner(bool End) { bWinner =  End; }
+   
 
 
     void Start()
@@ -26,16 +29,21 @@ public class C_PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Side = 1;
         bWinner = false;
+        Animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Horizontal = Input.GetAxisRaw("Horizontal");
+        Animator.SetBool("Running", Horizontal != 0.0f);
+        Animator.SetBool("Jumping",!IsGrounded());
         FlipPlayer();
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             Jump();
         }
+        
     }
 
     public void FixedUpdate()
