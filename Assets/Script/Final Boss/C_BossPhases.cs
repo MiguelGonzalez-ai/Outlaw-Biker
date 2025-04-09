@@ -9,22 +9,30 @@ public class C_BossPhases : MonoBehaviour
         BP_Phase1,
         BP_Phase2
     }
-    C_BossLife BossLife;
+    
+    private C_BossLife BossLife;
+    private bool bContact;
+    private int CounterProjectiles;
+    [SerializeField] private EBossPhases BossPhase;
+    [SerializeField] private Transform LaunchPositionPhase1;
+    [SerializeField] private Transform LaunchPositionPhase2;
+    [SerializeField] private Transform Canon;
+    [SerializeField] private GameObject ProjectilePhase1;
+    [SerializeField] private GameObject ProjectilePhase2;
+    [SerializeField] private AnimationCurve TrajectoryPhase1;
+    
 
-    bool Contact;
-    [SerializeField] EBossPhases BossPhase;
-    [SerializeField] Transform LaunchPositionPhase1;
-    [SerializeField] Transform LaunchPositionPhase2;
-    [SerializeField] GameObject ProjectilePhase1;
-    [SerializeField] GameObject ProjectilePhase2;
-    [SerializeField] AnimationCurve TrajectoryPhase1;
-    public int CounterProjectiles;
-    public void SetContact(bool ForwardContact) { Contact = ForwardContact; }
+    /*
+     * Getters y setters
+     */
+    public int GetCounterProjectiles() { return CounterProjectiles; }
+    public void SetCounterProjectiles(int Amount) { CounterProjectiles = Amount;  }
+    public void SetContact(bool ForwardContact) { bContact = ForwardContact; }
     
 
     private void Start()
     {
-        Contact = false;
+        bContact = false;
         CounterProjectiles = 0;
         BossLife = GetComponent<C_BossLife>();
     }
@@ -34,6 +42,7 @@ public class C_BossPhases : MonoBehaviour
         ActivatingBossPhase();
     }
 
+    //Cambia la fase del jefe dependiendo de la base
     private void ChangingBossPhase()
     {
         if(BossPhase == EBossPhases.BP_PhaseChange1 && BossLife.GetBossLife() <= 0.5)
@@ -46,6 +55,7 @@ public class C_BossPhases : MonoBehaviour
         }
     }
 
+    //Activa la fase del jefe dependiendo del Enum
     private void ActivatingBossPhase()
     {
         switch (BossPhase)
@@ -56,6 +66,7 @@ public class C_BossPhases : MonoBehaviour
                 break;
             case EBossPhases.BP_Phase2:
                 CancelInvoke("Phase1");
+                InvokeRepeating("Phase2", 0f, 2f);
                 BossPhase = EBossPhases.BP_PhaseChange2;
                 break;
 
@@ -64,7 +75,7 @@ public class C_BossPhases : MonoBehaviour
 
     private void Phase1()
     {
-        if(Contact)
+        if(bContact && ProjectilePhase1 != null)
         {
             Debug.LogWarning("Disparando Fase 1");
             GameObject Projectile = Instantiate(ProjectilePhase1, LaunchPositionPhase1.position, Quaternion.identity);
@@ -72,6 +83,16 @@ public class C_BossPhases : MonoBehaviour
             AuxProjectile.Trajectory = TrajectoryPhase1;
             CounterProjectiles++;
             
+        }
+    }
+
+    private void Phase2()
+    {
+        if(bContact && ProjectilePhase2 != null && Canon != null)
+        {
+            Debug.LogWarning("Disparando Fase 2");
+            Instantiate(ProjectilePhase2, LaunchPositionPhase2.position, Canon.transform.rotation);
+            CounterProjectiles++;
         }
     }
 

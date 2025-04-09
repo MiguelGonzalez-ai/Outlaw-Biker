@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class C_BossMovement : MonoBehaviour
 {
-    Vector2 NextPosition;
-    Vector2 PositionA;
-    Collider2D Colision;
-    C_BossPhases Counter;
-    [SerializeField] Transform PositionB;
-    [SerializeField] float SpeedTruck;
+    private Vector2 NextPosition;
+    private Vector2 PositionA;
+    private Collider2D Colision;
+    private C_BossPhases Counter;
+    [SerializeField] private Transform PositionB;
+    [SerializeField] private float SpeedTruck;
     void Start()
     {
         Colision = GetComponent<Collider2D>();
@@ -20,7 +20,7 @@ public class C_BossMovement : MonoBehaviour
     void Update()
     {
         
-        if(Counter.CounterProjectiles >= 20)
+        if(Counter.GetCounterProjectiles() >= 20)
         {
             MoveTruck();
             if(Vector2.Distance(transform.position, NextPosition) < 0.1f)
@@ -42,7 +42,7 @@ public class C_BossMovement : MonoBehaviour
         //Si no, a la posicion A
         NextPosition = (Vector2.Distance(transform.position, PositionA) < 0.1f) ? PositionB.position : PositionA;
         //Restablece el contador
-        Counter.CounterProjectiles = 0;
+        Counter.SetCounterProjectiles(0);
 
         //Girar el camion 180 grados alrededor del eje y
         transform.Rotate(transform.position.x, transform.position.y + 180, 0);

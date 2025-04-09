@@ -3,7 +3,13 @@ using UnityEngine.UI;
 
 public class C_BossLife : MonoBehaviour
 {
-    [SerializeField] Image BossLife;
+    [SerializeField] private Image BossLife;
+
+    /*
+     * Getter
+     */
+    public float GetBossLife() { return BossLife.fillAmount; }
+
     void Start()
     {
         BossLife.fillAmount = 1;
@@ -14,5 +20,4 @@ public class C_BossLife : MonoBehaviour
         BossLife.fillAmount = Mathf.Clamp(BossLife.fillAmount - Damage, 0, 1);
     }
 
-    public float GetBossLife() { return BossLife.fillAmount; }
 }

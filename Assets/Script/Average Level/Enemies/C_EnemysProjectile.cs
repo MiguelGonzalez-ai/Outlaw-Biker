@@ -13,6 +13,7 @@ public class C_EnemysProjectile : C_Projectile
     private GameObject Player;
     private C_PlayerLife Life;
     [SerializeField] private float Damage;
+    [SerializeField] private float RotationSpeed;
     
 
     void Start()
@@ -23,8 +24,13 @@ public class C_EnemysProjectile : C_Projectile
         if(Player != null)
         {
             Life = Player.GetComponent<C_PlayerLife>();
+            
             StartCoroutine(Launch(WaitTime));
         }
+    }
+    private void FixedUpdate()
+    {
+        transform.Rotate(-Vector3.forward, RotationSpeed * Side * Time.deltaTime);
     }
 
     /*
@@ -37,7 +43,7 @@ public class C_EnemysProjectile : C_Projectile
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             Life.TakingDamage(Damage);
             Destroy(gameObject);

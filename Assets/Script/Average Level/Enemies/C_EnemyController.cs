@@ -8,56 +8,87 @@ public class C_EnemyController : MonoBehaviour
         EES_Turning,
         EES_Attacking
     }
+    private enum EEnemyForward
+    {
+        EEF_Right,
+        EEF_Left
+    }
     private int Side;
-    [SerializeField] private bool Contact;
-    [SerializeField] private bool Behind;
+    [SerializeField] private bool bContact;
+    [SerializeField] private bool bBehind;
     [SerializeField] private EEnemyState EnemyState;
-    [SerializeField] GameObject Projectile;
-    [SerializeField] Transform LaunchPosition;
+    [SerializeField] private EEnemyForward EnemySide;
+    [SerializeField] private GameObject Projectile;
+    [SerializeField] private Transform LaunchPosition;
 
     /*
      * Getters y setters
      */
-    public void SetEnemysBehind(bool BehindEnemy) { Behind = BehindEnemy; }
-    public void SetEnemyContact(bool ContactEnemy) { Contact = ContactEnemy; }
+    public void SetEnemysBehind(bool BehindEnemy) { bBehind = BehindEnemy; }
+    public void SetEnemyContact(bool ContactEnemy) { bContact = ContactEnemy; }
 
 
-    void Start()
+    void Awake()
     {
-        Contact = false;
-        Behind = false;
-        Side = -1;
+        bContact = false;
+        bBehind = false;
         EnemyState = EEnemyState.EES_Idle;
+        InitialSide();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Contact && EnemyState == EEnemyState.EES_Idle) //Si el enemigo tiene contacto visual y se encuentra inactivo, ataca
+        Attacking();
+        Turning();
+    }
+
+    private void Attacking()
+    {
+        if (bContact && EnemyState == EEnemyState.EES_Idle) //Si el enemigo tiene contacto visual y se encuentra inactivo, ataca
         {
             EnemyState = EnemyState = EEnemyState.EES_Attacking;
             InvokeRepeating("SpawnProjectile", 2f, 2f);
         }
-        else if(!Contact && EnemyState == EEnemyState.EES_Attacking) //Si el enemigo ya no tiene contacto visual y esta atacando, dejara de hacerlo
+        else if (!bContact && EnemyState == EEnemyState.EES_Attacking) //Si el enemigo ya no tiene contacto visual y esta atacando, dejara de hacerlo
         {
             EnemyState = EEnemyState.EES_Idle;
             CancelInvoke("SpawnProjectile");
         }
-        if(Behind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
+    }
+
+    private void Turning()
+    {
+        if (bBehind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
         {
-            EnemyState = EEnemyState.EES_Turning; 
+            Debug.Log("Volteando");
+            EnemyState = EEnemyState.EES_Turning;
             ChangeSide();
         }
-        else if(!Behind && EnemyState == EEnemyState.EES_Turning) //Si el jugador ya no se encuentra atras y el jugador volteo, quedara inactivo
+        else if (!bBehind && EnemyState == EEnemyState.EES_Turning) //Si el jugador ya no se encuentra atras y el jugador volteo, quedara inactivo
         {
             EnemyState = EEnemyState.EES_Idle;
         }
     }
 
+    private void InitialSide()
+    {
+        if(EnemySide == EEnemyForward.EEF_Right)
+        {
+            Side = 1;
+            transform.localScale = new Vector3(Side, 1, 1);
+        }
+        else if(EnemySide == EEnemyForward.EEF_Left)
+        {
+            Side = -1;
+            transform.localScale = new Vector3(Side, 1, 1);
+        }
+    }
+
     private void ChangeSide()
     {
-        transform.localScale = new Vector3(Side, 1, 1);
         Side *= -1;
+        transform.localScale = new Vector3(Side, 1, 1);
     }
 
     private void SpawnProjectile()
