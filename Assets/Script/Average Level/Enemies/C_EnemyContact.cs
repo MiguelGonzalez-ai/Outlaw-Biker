@@ -1,6 +1,6 @@
 using System.Diagnostics.Contracts;
 using UnityEngine;
-
+//Prueba
 public class C_EnemyContact : MonoBehaviour
 {
     private C_EnemyController Contact;
