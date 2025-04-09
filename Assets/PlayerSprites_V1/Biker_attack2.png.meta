@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Biker_attack2_0: -6583472577656242078
+      Biker_attack2_1: -6587522882237565546
+      Biker_attack2_2: 2184225032334187069
+      Biker_attack2_3: 7145740856637905867
+      Biker_attack2_4: -2061538797911778173
+      Biker_attack2_5: 7832031493553583897
+      Biker_attack2_6: 8685664250024965693
+      Biker_attack2_7: -8162041195470703609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

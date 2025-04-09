@@ -8,6 +8,7 @@ public class C_EnemyController : MonoBehaviour
         EES_Turning,
         EES_Attacking
     }
+    private int SideEnemy;
     private int Side;
     [SerializeField] private bool bContact;
     [SerializeField] private bool bBehind;
@@ -27,6 +28,7 @@ public class C_EnemyController : MonoBehaviour
         bContact = false;
         bBehind = false;
         Side = -1;
+        SideEnemy = 1;
         EnemyState = EEnemyState.EES_Idle;
     }
 
@@ -66,7 +68,7 @@ public class C_EnemyController : MonoBehaviour
 
     private void ChangeSide()
     {
-        transform.localScale = new Vector3(Side, 1, 1);
+        transform.localScale = new Vector3(-Side, 1, 1);
         Side *= -1;
     }
 

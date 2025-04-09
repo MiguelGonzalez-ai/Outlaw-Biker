@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Biker_death_0: 1324592268616771537
+      Biker_death_1: -1033013684159133044
+      Biker_death_2: 1387271073235013010
+      Biker_death_3: 2743186813669621832
+      Biker_death_4: -4060151416582447097
+      Biker_death_5: 2662390573989866876
+      Biker_death_6: -8198513515154467201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
