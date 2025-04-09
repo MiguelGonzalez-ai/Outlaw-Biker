@@ -8,11 +8,16 @@ public class C_EnemyController : MonoBehaviour
         EES_Turning,
         EES_Attacking
     }
-    private int SideEnemy;
+    private enum EEnemyForward
+    {
+        EEF_Right,
+        EEF_Left
+    }
     private int Side;
     [SerializeField] private bool bContact;
     [SerializeField] private bool bBehind;
     [SerializeField] private EEnemyState EnemyState;
+    [SerializeField] private EEnemyForward EnemySide;
     [SerializeField] private GameObject Projectile;
     [SerializeField] private Transform LaunchPosition;
 
@@ -27,9 +32,8 @@ public class C_EnemyController : MonoBehaviour
     {
         bContact = false;
         bBehind = false;
-        Side = -1;
-        SideEnemy = 1;
         EnemyState = EEnemyState.EES_Idle;
+        InitialSide();
     }
 
     // Update is called once per frame
@@ -57,6 +61,7 @@ public class C_EnemyController : MonoBehaviour
     {
         if (bBehind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
         {
+            Debug.Log("Volteando");
             EnemyState = EEnemyState.EES_Turning;
             ChangeSide();
         }
@@ -66,10 +71,24 @@ public class C_EnemyController : MonoBehaviour
         }
     }
 
+    private void InitialSide()
+    {
+        if(EnemySide == EEnemyForward.EEF_Right)
+        {
+            Side = 1;
+            transform.localScale = new Vector3(Side, 1, 1);
+        }
+        else if(EnemySide == EEnemyForward.EEF_Left)
+        {
+            Side = -1;
+            transform.localScale = new Vector3(Side, 1, 1);
+        }
+    }
+
     private void ChangeSide()
     {
-        transform.localScale = new Vector3(-Side, 1, 1);
         Side *= -1;
+        transform.localScale = new Vector3(Side, 1, 1);
     }
 
     private void SpawnProjectile()

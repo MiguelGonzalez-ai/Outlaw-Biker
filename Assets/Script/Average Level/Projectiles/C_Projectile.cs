@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class C_Projectile : MonoBehaviour
 {
-    private int Side;
+    protected int Side;
     protected Rigidbody2D rb;
     [SerializeField] protected float WaitTime;
     [SerializeField] protected float SpeedX;
