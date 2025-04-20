@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 989d6790c0e55c74da5031794aeece26
+guid: 5cfffdb74a521af4a8a15f1128a3dea1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5039679650836518969
-    second: Banana prop_0
+      213: 3465286685962602723
+    second: 6_0
+  - first:
+      213: 6653994858678897968
+    second: 6_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Banana prop_0
+      name: 6_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 9
-        width: 74
-        height: 78
+        x: 36
+        y: 0
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93810e9e0f980f540800000000000000
-      internalID: 5039679650836518969
+      spriteID: 3e801b981eb271030800000000000000
+      internalID: 3465286685962602723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dc4d0d11db75c50800000000000000
+      internalID: 6653994858678897968
       vertices: []
       indices: 
       edges: []

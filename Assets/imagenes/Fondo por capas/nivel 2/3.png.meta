@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 348abdc7a8bba4d498b3823ac4e4eaff
+guid: dd2cf1d9e54fbdd45b0a16d52b65c7a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6621269108871871932
-    second: Botella_0
+      213: -6470460504253458178
+    second: 3_0
+  - first:
+      213: 6623151957235123224
+    second: 3_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Botella_0
+      name: 3_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 3
-        width: 29
-        height: 81
+        x: 47
+        y: 0
+        width: 128
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbd339c6c2973eb50800000000000000
-      internalID: 6621269108871871932
+      spriteID: ef817ce047e4436a0800000000000000
+      internalID: -6470460504253458178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 0
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814ce683d992aeb50800000000000000
+      internalID: 6623151957235123224
       vertices: []
       indices: 
       edges: []
