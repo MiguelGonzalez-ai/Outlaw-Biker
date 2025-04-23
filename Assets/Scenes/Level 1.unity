@@ -1742,6 +1742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WinningText: {fileID: 118092962}
+  TimeToChangeScene: 5
 --- !u!1 &852621370
 GameObject:
   m_ObjectHideFlags: 0
@@ -8093,8 +8094,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7f315672d2f4a409037b16a28f7e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundCollectible: {fileID: 8300000, guid: fd5bb9d2884d78946b80d69bfbe8fd1b, type: 3}
+  Player: {fileID: 0}
+  AuxCollectibles: 0
   CollectiblesCounter: 0
+  Enemies: []
+  Items: []
+  SoundCollectible: {fileID: 8300000, guid: fd5bb9d2884d78946b80d69bfbe8fd1b, type: 3}
+  SceneNameToLoad: 
 --- !u!82 &1176621785
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8885,6 +8891,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1990658733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1990658735}
+  - component: {fileID: 1990658734}
+  m_Layer: 0
+  m_Name: LevelSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1990658734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990658733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f4ffc9b9ac59664993bcb4db2a89bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level: 0
+  NextScene: MiniGame1
+--- !u!4 &1990658735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990658733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.826675, y: -5.4994135, z: 0.097375154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2008605064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9488,6 +9540,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4577657867862528080, guid: 7452e04c68297104884172a43baef00d, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9667,6 +9723,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 1990658735}
+  - {fileID: 1176621783}
   - {fileID: 482021889}
   - {fileID: 619394802}
   - {fileID: 2090924702}
@@ -9675,7 +9733,6 @@ SceneRoots:
   - {fileID: 1177901342}
   - {fileID: 1189216260}
   - {fileID: 516781154534944683}
-  - {fileID: 1176621783}
   - {fileID: 7065492349184829864}
   - {fileID: 812259539}
   - {fileID: 669864558}

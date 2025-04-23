@@ -14,7 +14,7 @@ public class C_Projectile : MonoBehaviour
      */
     public void SetProjectileSide(int SideEnemy) { Side = SideEnemy; }
 
-    void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(Launch(WaitTime));

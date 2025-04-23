@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class C_End : MonoBehaviour
 {
@@ -9,21 +11,13 @@ public class C_End : MonoBehaviour
      *
      */
 
-    private GameObject Player;
-    private C_PlayerController Movement;
+    private C_PlayerController Movement => C_Managment.Instance.PlayerController;
     [SerializeField] private GameObject WinningText;
+    [SerializeField] private float TimeToChangeScene;
 
     void Start()
     {
-        Player = FindFirstObjectByType<C_PlayerController>().gameObject;
-        if (Player != null) //Verifica si el jugador existe en la escena
-        {
-            Movement = Player.GetComponent<C_PlayerController>();
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ No se encontró ningún objeto con C_PlayerController en la escena.");
-        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,6 +26,8 @@ public class C_End : MonoBehaviour
         {
             Movement.SetPlayersWinner(true);
             WinningText.SetActive(true);
+            StartCoroutine(C_Managment.Instance.ChangeScene(TimeToChangeScene));
         }
     }
+
 }
