@@ -8,15 +8,12 @@ public class C_LevelSetup : MonoBehaviour
     {
         if (C_Managment.Instance != null)
         {
+            Debug.ClearDeveloperConsole();
             C_Managment.Instance.SetCurrentLevel(Level);
             C_Managment.Instance.SetSceneToLoad(NextScene);
             C_Managment.Instance.Settings();
         }
     }
-
-    private void Start()
-    {
-        C_Managment.Instance.Settings();
-    }
+    
 
 }

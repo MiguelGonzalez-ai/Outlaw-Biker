@@ -7,7 +7,7 @@ public class C_PlayerLife : MonoBehaviour
 {
 
     private Vector2 Spawn;
-    [SerializeField] private ELevel CurrentLevel => C_Managment.Instance.GetCurrentLevel();
+    private ELevel CurrentLevel => C_Managment.Instance.GetCurrentLevel();
     [SerializeField] private Image PlayerLife;
 
     //Public Functions

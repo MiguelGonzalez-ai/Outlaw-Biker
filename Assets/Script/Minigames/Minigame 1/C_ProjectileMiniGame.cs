@@ -45,6 +45,7 @@ public class C_ProjectileMiniGame : C_Projectile
 
     private void OnMouseDown()
     {
+        if (C_Managment.Instance.GetIsPaused()) return;
         if (gameObject.CompareTag("Ball"))
         {
             Hit.IncreaseHits();

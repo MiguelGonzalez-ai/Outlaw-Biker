@@ -15,14 +15,9 @@ public class C_End : MonoBehaviour
     [SerializeField] private GameObject WinningText;
     [SerializeField] private float TimeToChangeScene;
 
-    void Start()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             Movement.SetPlayersWinner(true);
             WinningText.SetActive(true);

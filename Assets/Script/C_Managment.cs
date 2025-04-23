@@ -35,6 +35,7 @@ public class C_Managment : MonoBehaviour
     public void IncreaseCollectiblesCounter() { CollectiblesCounter++; }
     public IEnumerator ChangeScene(float WaitTime)
     {
+        Debug.Log("Cambiando Escena");
         yield return new WaitForSeconds(WaitTime);
         SceneManager.LoadScene(SceneNameToLoad);
     }
@@ -53,6 +54,7 @@ public class C_Managment : MonoBehaviour
     public void SetSceneToLoad(string Scene) { SceneNameToLoad = Scene; }
     //Getters
     public ELevel GetCurrentLevel() { return CurrentLevel; }
+    public bool GetIsPaused() { return bIsPause; }
 
     private void Awake()
     {
@@ -70,12 +72,6 @@ public class C_Managment : MonoBehaviour
 
     }
 
-    private void Start()
-    {
-        DefaultSettings();
-        PlayerComponents();
-        CurrentLevelSettings();
-    }
     private void DefaultSettings()
     {
         bIsPause = false;
@@ -131,7 +127,7 @@ public class C_Managment : MonoBehaviour
     private void PauseManagment()
     {
         Time.timeScale = (!bIsPause) ? 0f : 1f;
-        if (Items != null)
+        if (CurrentLevel != ELevel.EL_Minigame && Items != null)
         {
             foreach(C_Item Item in Items)
             {
