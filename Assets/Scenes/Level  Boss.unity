@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 392349429}
   - component: {fileID: 392349430}
   m_Layer: 0
-  m_Name: Barrel
+  m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1108,8 +1108,9 @@ MonoBehaviour:
   BossPhase: 2
   LaunchPositionPhase1: {fileID: 1129108971}
   LaunchPositionPhase2: {fileID: 30168574}
+  Canon: {fileID: 942050363}
   ProjectilePhase1: {fileID: 4821461235597373810, guid: ac3c22214b65e7540830e19e6ebcd04f, type: 3}
-  ProjectilePhase2: {fileID: 0}
+  ProjectilePhase2: {fileID: 5668186056449919869, guid: b9097dc3246eb84488ada3912c767abe, type: 3}
   TrajectoryPhase1:
     serializedVersion: 2
     m_Curve:
@@ -1143,7 +1144,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  CounterProjectiles: 0
 --- !u!114 &840262739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1316,7 +1316,7 @@ GameObject:
   - component: {fileID: 942050365}
   - component: {fileID: 942050364}
   m_Layer: 0
-  m_Name: Pivot Barrel
+  m_Name: Pivot Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1369,12 +1369,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 942050362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c35ccbdf0a4f61241a321cd8bc3bf6cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 6493802cda2add646afdf82dea3fad3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jugador: {fileID: 1166722736}
-  vida: {fileID: 2077016114}
-  "contactoCa\xF1on": 0
+  PlayerPosition: {fileID: 1166722736}
 --- !u!1 &1129108970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1423,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LaunchPosition: {fileID: 2061199455}
   PlayerProjectiles: {fileID: 1221141083173730886, guid: 98490bdf422ad5a41bc28f6716741919, type: 3}
-  CounterProjectiles: 5
 --- !u!4 &1166722736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1340970949937828789, guid: b10275d1c2ff3b84599796e24c1eac3d, type: 3}

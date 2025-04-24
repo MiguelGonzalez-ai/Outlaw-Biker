@@ -32,7 +32,7 @@ public class C_Healer : C_Item
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             Heal.Healing(AmountHealing);
             Destroy(gameObject);
