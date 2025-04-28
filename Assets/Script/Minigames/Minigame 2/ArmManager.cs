@@ -6,34 +6,53 @@ using UnityEngine.UI;
 
 public class ArmManager : MonoBehaviour
 {
-    private bool bWinner;
+    private enum ERoundArm : int
+    {
+        ERA_Round1 = 1,
+        ERA_Round2,
+        ERA_Round3,
+        ERA_ArmWon
+    }
+    TextMeshProUGUI TextCounter;
+    TextMeshProUGUI TextInstructions;
+    private bool bStart;
     private bool bFirstTime;
-    [SerializeField] private GameObject Text;
+    private bool bWon;
+    private float CurrentOppositeForce;
+    [SerializeField] private GameObject Counter;
+    [SerializeField] private GameObject Instructions;
     [SerializeField] private Image Bar;
+    [SerializeField] ERoundArm CurrentRound;
     [SerializeField] private float WaitTimeToStart;
     [SerializeField] private float PlayersForce;
-    [SerializeField] private float OppositeForce;
-    
+    [SerializeField] private float ForceRound1;
+    [SerializeField] private float ForceRound2;
+    [SerializeField] private float ForceRound3;
 
-    
 
     void Start()
     {
-        bWinner = true;
+        CurrentRound = ERoundArm.ERA_Round1;
+        bStart = false;
         bFirstTime = true;
-        StartCoroutine(StartingGame(WaitTimeToStart));
+        bWon = false;
         Bar.fillAmount = 0.5f;
-        
-
+        ChangingRound();
+        if (Counter != null && Instructions != null)
+        {
+            TextCounter = Counter.GetComponent<TextMeshProUGUI>();
+            TextInstructions = Instructions.GetComponent<TextMeshProUGUI>();
+            StartCoroutine(StartingGame(WaitTimeToStart));
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        if (!bWinner) {
+        if (bStart) {
             InputsBar();
-            EndGame();
+            CurrentRoundArm();
         }
         
         
@@ -45,48 +64,77 @@ public class ArmManager : MonoBehaviour
         {
             IncreaseForce(PlayersForce);
         }
-        DecreaseForce(OppositeForce);
+        DecreaseForce(CurrentOppositeForce);
     }
     
-    private void EndGame()
+    private void CurrentRoundArm()
     {
-        TextMeshProUGUI EndGameText = Text.GetComponent<TextMeshProUGUI>();
-        if (Bar.fillAmount >= 0.99)
+        if (Bar.fillAmount >= 0.99 && (int)CurrentRound < 4)
         {
-            bWinner = true;
-            EndGameText.text = "You Won!!";
-
+            ChangingRound();
+            Bar.fillAmount = 0.5f;
+            CurrentRound++;
+            bFirstTime = false;
+            bWon = true;
+            bStart = false;
+            StartCoroutine(StartingGame(WaitTimeToStart));
         }
         else if (Bar.fillAmount == 0)
         {
-            bWinner = true;
             bFirstTime = false;
-            EndGameText.text = "You Lost...";
+            bStart = false;
+            TextInstructions.text = "You lost...";
             StartCoroutine(StartingGame(WaitTimeToStart));
-            
+
+        }
+        else if (Bar.fillAmount >= 0.99 && (int)CurrentRound == 4)
+        {
+            TextInstructions.text = "You won!!";
         }
     }
+
+    private void ChangingRound()
+    {
+        
+        switch(CurrentRound)
+        {
+            case ERoundArm.ERA_Round1:
+                CurrentOppositeForce = ForceRound1;
+                break;
+            case ERoundArm.ERA_Round2:
+                CurrentOppositeForce = ForceRound2;
+                break;
+            case ERoundArm.ERA_Round3:
+                CurrentOppositeForce = ForceRound3;
+                break;
+            case ERoundArm.ERA_ArmWon:
+                break;
+        }
+    }
+
     IEnumerator StartingGame(float WaitTime)
     {
-        TextMeshProUGUI texto = Text.GetComponent<TextMeshProUGUI>();
-        if (!bFirstTime)
+        if(bFirstTime)
+        {
+            TextInstructions.text = "You must press 'space' to push the bar and win at least 3 rounds";
+        }
+        else if(!bFirstTime && !bWon)
         {
             yield return new WaitForSeconds(3);
             Bar.fillAmount = 0.5f;
-            texto.text = "Do it Again...";
+            TextInstructions.text = "Do it Again...";
             yield return new WaitForSeconds(3);
         }
-
-        texto.text = "" + WaitTime;
+        TextCounter.text = "" + WaitTime;
         while (WaitTime > 0)
         {
             yield return new WaitForSeconds(1);
             WaitTime--;
-            texto.text = ""+ WaitTime;
+            TextCounter.text = ""+ WaitTime;
             if (WaitTime == 0)
             {
-                texto.text = "¡¡VAMOS!!";
-                bWinner = false;
+                TextInstructions.text = "Round " + (int)CurrentRound;
+                bStart = true;
             }
         }
     }

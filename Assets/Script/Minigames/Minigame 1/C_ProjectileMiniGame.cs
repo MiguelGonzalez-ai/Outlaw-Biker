@@ -12,9 +12,9 @@ public class C_ProjectileMiniGame : C_Projectile
     [SerializeField] private float minForce;
     [SerializeField] private float maxForce;
 
-    void Start()
+    protected override void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        base.Start();
         Direction();
         LauncheManager = FindFirstObjectByType<C_LauncherManager>().gameObject;
         if(LauncheManager != null)
@@ -36,11 +36,6 @@ public class C_ProjectileMiniGame : C_Projectile
     {
         int Aux = Random.Range(1, 10);
         DirectionRotation = (Aux >= 6) ? 1 : -1;  
-    }
-
-    protected override IEnumerator Launch(float WaitTime)
-    {
-        yield return base.Launch(WaitTime);
     }
 
     private void OnMouseDown()

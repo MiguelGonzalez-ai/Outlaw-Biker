@@ -17,20 +17,20 @@ public class C_Item : MonoBehaviour
     //Setters
     public virtual void SetItemState(EItemState State) { ItemState = State; }
     
-    protected virtual void Update()
+    protected void Update()
     {
         if (ItemState == EItemState.EIS_Pause) return;
         OffsetItem();
         
     }
 
-    protected virtual void OffsetItem()
+    protected void OffsetItem()
     {
         RunningTime += Time.deltaTime;
         transform.position = new Vector2(transform.position.x, transform.position.y + OffsetSin());
     }
 
-    protected virtual float OffsetSin()
+    protected float OffsetSin()
     {
         return Amplitude * Mathf.Sin(TimeConstant * RunningTime);
     }
