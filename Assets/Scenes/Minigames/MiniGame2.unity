@@ -649,7 +649,7 @@ MonoBehaviour:
   Instructions: {fileID: 530348447}
   Bar: {fileID: 251953338}
   CurrentRound: 1
-  WaitTimeToStart: 2
+  WaitTimeToStart: 3
   PlayersForce: 0.025
   ForceRound1: 0.05
   ForceRound2: 0.1

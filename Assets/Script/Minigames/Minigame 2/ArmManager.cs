@@ -32,7 +32,6 @@ public class ArmManager : MonoBehaviour
 
     void Start()
     {
-        CurrentRound = ERoundArm.ERA_Round1;
         bStart = false;
         bFirstTime = true;
         bWon = false;
@@ -69,14 +68,16 @@ public class ArmManager : MonoBehaviour
     
     private void CurrentRoundArm()
     {
-        if (Bar.fillAmount >= 0.99 && (int)CurrentRound < 4)
+        if (Bar.fillAmount >= 0.99)
         {
-            ChangingRound();
-            Bar.fillAmount = 0.5f;
             CurrentRound++;
+            bStart = false;
+            ChangingRound();
+            if (CurrentRound == ERoundArm.ERA_ArmWon) return;
+            Bar.fillAmount = 0.5f;
             bFirstTime = false;
             bWon = true;
-            bStart = false;
+            TextInstructions.enabled = false;
             StartCoroutine(StartingGame(WaitTimeToStart));
         }
         else if (Bar.fillAmount == 0)
@@ -87,10 +88,6 @@ public class ArmManager : MonoBehaviour
             StartCoroutine(StartingGame(WaitTimeToStart));
 
         }
-        else if (Bar.fillAmount >= 0.99 && (int)CurrentRound == 4)
-        {
-            TextInstructions.text = "You won!!";
-        }
     }
 
     private void ChangingRound()
@@ -99,15 +96,20 @@ public class ArmManager : MonoBehaviour
         switch(CurrentRound)
         {
             case ERoundArm.ERA_Round1:
+                Debug.Log("Round 1");
                 CurrentOppositeForce = ForceRound1;
                 break;
             case ERoundArm.ERA_Round2:
+                Debug.Log("Round 2");
                 CurrentOppositeForce = ForceRound2;
                 break;
             case ERoundArm.ERA_Round3:
+                Debug.Log("Round 3");
                 CurrentOppositeForce = ForceRound3;
                 break;
             case ERoundArm.ERA_ArmWon:
+                Debug.Log("Ganaste");
+                TextInstructions.text = "You Won!! ";
                 break;
         }
     }
@@ -125,6 +127,7 @@ public class ArmManager : MonoBehaviour
             TextInstructions.text = "Do it Again...";
             yield return new WaitForSeconds(3);
         }
+        TextCounter.enabled = true;
         TextCounter.text = "" + WaitTime;
         while (WaitTime > 0)
         {
@@ -133,6 +136,8 @@ public class ArmManager : MonoBehaviour
             TextCounter.text = ""+ WaitTime;
             if (WaitTime == 0)
             {
+                TextCounter.enabled = false;
+                TextInstructions.enabled = true;
                 TextInstructions.text = "Round " + (int)CurrentRound;
                 bStart = true;
             }
