@@ -17,6 +17,7 @@ public class C_Projectile : MonoBehaviour
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        StartCoroutine(Launch(WaitTime));
     }
 
     protected IEnumerator Launch(float WaitTime)

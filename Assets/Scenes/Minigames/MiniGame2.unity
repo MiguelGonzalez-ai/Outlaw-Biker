@@ -649,11 +649,12 @@ MonoBehaviour:
   Instructions: {fileID: 530348447}
   Bar: {fileID: 251953338}
   CurrentRound: 1
-  WaitTimeToStart: 3
+  WaitTimeToChangeScene: 5
+  WaitTimeToStart: 5
   PlayersForce: 0.025
   ForceRound1: 0.05
   ForceRound2: 0.1
-  ForceRound3: 0.2
+  ForceRound3: 0.15
 --- !u!4 &1136943261
 Transform:
   m_ObjectHideFlags: 0
@@ -708,7 +709,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186591226}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f4ffc9b9ac59664993bcb4db2a89bbf, type: 3}
   m_Name: 

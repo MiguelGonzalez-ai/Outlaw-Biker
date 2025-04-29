@@ -21,7 +21,6 @@ public class C_ProjectileMiniGame : C_Projectile
         {
             Hit = LauncheManager.GetComponent<C_LauncherManager>();
             SpeedY = Random.Range(minForce, maxForce);
-            StartCoroutine(Launch(WaitTime));
         }
 
     }

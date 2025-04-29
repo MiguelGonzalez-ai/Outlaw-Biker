@@ -23,6 +23,7 @@ public class ArmManager : MonoBehaviour
     [SerializeField] private GameObject Instructions;
     [SerializeField] private Image Bar;
     [SerializeField] ERoundArm CurrentRound;
+    [SerializeField] private float WaitTimeToChangeScene;
     [SerializeField] private float WaitTimeToStart;
     [SerializeField] private float PlayersForce;
     [SerializeField] private float ForceRound1;
@@ -84,6 +85,7 @@ public class ArmManager : MonoBehaviour
         {
             bFirstTime = false;
             bStart = false;
+            bWon = false;
             TextInstructions.text = "You lost...";
             StartCoroutine(StartingGame(WaitTimeToStart));
 
@@ -110,6 +112,10 @@ public class ArmManager : MonoBehaviour
             case ERoundArm.ERA_ArmWon:
                 Debug.Log("Ganaste");
                 TextInstructions.text = "You Won!! ";
+                if(C_Managment.Instance != null)
+                {
+                    StartCoroutine(C_Managment.Instance.ChangeScene(WaitTimeToChangeScene));
+                }
                 break;
         }
     }

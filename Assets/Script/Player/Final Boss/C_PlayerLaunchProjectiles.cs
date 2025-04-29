@@ -8,9 +8,9 @@ public class C_PlayerLaunchProjectiles : MonoBehaviour
     [SerializeField] private GameObject PlayerProjectiles;
 
     /*
-     * Getters y setters
+     * Public
      */
-    public void SetPlayersCounterProjectiles(int Amount) { CounterProjectiles = Amount; }
+    public void IncreasePlayersCounterProjectiles(int Amount) { CounterProjectiles = Mathf.Clamp(CounterProjectiles + Amount, 0, 10); }
 
     void Start()
     {

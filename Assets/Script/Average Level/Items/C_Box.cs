@@ -10,7 +10,7 @@ public class C_Box : C_Item
         if (collision.CompareTag("Player"))
         {
             if (Counter == null) return;
-            Counter.SetPlayersCounterProjectiles(5);
+            Counter.IncreasePlayersCounterProjectiles(5);
             Destroy(gameObject);
         }
     }
