@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      carro-nivel-bajo_0: 8602942630571781939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

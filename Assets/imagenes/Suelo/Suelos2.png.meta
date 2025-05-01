@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: a4d7b5dd30c09d348b21343835bdcec5
+guid: 5a82d26dbe828c24c8b29408d8aed034
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -855298285791758126
-    second: 1_0
+      213: -3216108725412352472
+    second: Suelos2_0
+  - first:
+      213: 6313419482505577597
+    second: Suelos2_1
+  - first:
+      213: -4688571211099809959
+    second: Suelos2_2
+  - first:
+      213: -5430253713537644902
+    second: Suelos2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_0
+      name: Suelos2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 144
+        x: 17
+        y: 123
+        width: 69
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d8b16a9dbe5124f0800000000000000
-      internalID: -855298285791758126
+      spriteID: 82e23c667261e53d0800000000000000
+      internalID: -3216108725412352472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelos2_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 87
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7486c4c195cd9750800000000000000
+      internalID: 6313419482505577597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelos2_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 45
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957d54a1359deeeb0800000000000000
+      internalID: -4688571211099809959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelos2_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 10
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96c75ca40dd3a4b0800000000000000
+      internalID: -5430253713537644902
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6580c710b605acc49ac29781dfb1ed11
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1_0: -855298285791758126
+      Suelos2_0: -3216108725412352472
+      Suelos2_1: 6313419482505577597
+      Suelos2_2: -4688571211099809959
+      Suelos2_3: -5430253713537644902
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

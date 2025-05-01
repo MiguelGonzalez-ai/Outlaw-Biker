@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      carrp-nivel-alto_0: -6459703260691275105
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
