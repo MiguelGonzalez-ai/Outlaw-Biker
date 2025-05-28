@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7d763a9c9a2ad6d46988f8e827d9d80d
+guid: cde33d2c2ba88d04f8087fc675106228
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 865749419789035025
-    second: petaco_0
+      213: 6303405032772103775
+    second: jefe fina51_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: petaco_0
+      name: jefe fina51_0
       rect:
         serializedVersion: 2
-        x: 144
-        y: 145
-        width: 192
-        height: 185
+        x: 0
+        y: 0
+        width: 1191
+        height: 793
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 116a607a282c30c00800000000000000
-      internalID: 865749419789035025
+      spriteID: f5e6acdfa713a7750800000000000000
+      internalID: 6303405032772103775
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      petaco_0: 865749419789035025
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

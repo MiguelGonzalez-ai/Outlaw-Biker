@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 7d763a9c9a2ad6d46988f8e827d9d80d
+guid: 06befc3ae3749f647bbcda1af3e2372b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 865749419789035025
-    second: petaco_0
+      213: -4873741201276772220
+    second: jefe fina31_0
+  - first:
+      213: -6118073037011090221
+    second: jefe fina31_1
+  - first:
+      213: 7830782841428997163
+    second: jefe fina31_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: petaco_0
+      name: jefe fina31_0
       rect:
         serializedVersion: 2
-        x: 144
-        y: 145
-        width: 192
-        height: 185
+        x: 221
+        y: 0
+        width: 70
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 116a607a282c30c00800000000000000
-      internalID: 865749419789035025
+      spriteID: 48066ba133efc5cb0800000000000000
+      internalID: -4873741201276772220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe fina31_1
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 71
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d40f0fdcfc381ba0800000000000000
+      internalID: -6118073037011090221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe fina31_2
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 0
+        width: 71
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24799841878cac60800000000000000
+      internalID: 7830782841428997163
       vertices: []
       indices: 
       edges: []
@@ -134,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      petaco_0: 865749419789035025
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
