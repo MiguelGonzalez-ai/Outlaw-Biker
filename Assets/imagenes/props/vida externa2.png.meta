@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 756d5aeb72296a74dafb5c7dbe1bd291
+guid: 88d27d828d923be4692f733812353083
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7017759775325125057
-    second: vida interna_0
+      213: -7583752155227437265
+    second: vida externa2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vida interna_0
+      name: vida externa2_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 182
-        width: 83
-        height: 16
+        x: 48
+        y: 179
+        width: 113
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c9774f7557146160800000000000000
-      internalID: 7017759775325125057
+      spriteID: f27c013689911c690800000000000000
+      internalID: -7583752155227437265
       vertices: []
       indices: 
       edges: []
