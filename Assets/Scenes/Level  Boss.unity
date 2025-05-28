@@ -2078,6 +2078,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1736912484}
+  - component: {fileID: 1736912485}
   m_Layer: 0
   m_Name: BossManager
   m_TagString: Untagged
@@ -2100,6 +2101,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1736912485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736912483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa53abb3436e3743b1a86523af48eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxProjectiles: {fileID: 8384826200406114117, guid: c7d66ecde65d31e45be152d47399e545, type: 3}
 --- !u!1 &1871874453
 GameObject:
   m_ObjectHideFlags: 0

@@ -8063,6 +8063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+  Boss: {fileID: 0}
   AuxCollectibles: 0
   CollectiblesCounter: 0
   Enemies: []
@@ -8889,7 +8890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: 0
-  NextScene: Minigame1
+  NextScene: Level  Boss
 --- !u!4 &1990658735
 Transform:
   m_ObjectHideFlags: 0

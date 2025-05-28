@@ -23,6 +23,7 @@ public class C_Managment : MonoBehaviour
     public C_PlayerLaunchProjectiles PlayerLaunchProjectiles { get; private set; }
     public C_BossLife BossLife { get; private set; }
     public C_BossPhases BossPhases { get; private set; }
+    public C_BossManager BossManager { get; private set; }
     public C_LevelSetup LevelSetup { get; private set; }
     private bool bIsPause;
     [SerializeField] private int AuxCollectibles;
@@ -115,6 +116,7 @@ public class C_Managment : MonoBehaviour
                 Boss = FindFirstObjectByType<C_BossLife>().gameObject;
                 BossLife = Boss.GetComponent<C_BossLife>();
                 BossPhases = Boss.GetComponent<C_BossPhases>();
+                BossManager = FindFirstObjectByType<C_BossManager>();
                 break;
             case ELevel.EL_Minigame:
                 Debug.Log("Minijuego");

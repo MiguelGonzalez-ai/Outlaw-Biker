@@ -43,6 +43,7 @@ public class C_BossMovement : MonoBehaviour
         NextPosition = (Vector2.Distance(transform.position, PositionA) < 0.1f) ? PositionB.position : PositionA;
         //Restablece el contador
         Counter.SetCounterProjectiles(0);
+        C_Managment.Instance.BossManager.SetCanSpawn(false);
 
         //Girar el camion 180 grados alrededor del eje y
         transform.Rotate(transform.position.x, transform.position.y + 180, 0);
