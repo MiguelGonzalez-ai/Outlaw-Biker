@@ -439,7 +439,7 @@ MonoBehaviour:
   Main: {fileID: 1189175442}
   MinimumProjectiles: 20
   SpawnIntervals: 1
-  TimeMinigame: 30
+  TimeMinigame: 60
   TimeToChangeScene: 5
 --- !u!4 &960936984
 Transform:

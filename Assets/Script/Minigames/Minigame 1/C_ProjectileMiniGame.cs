@@ -14,7 +14,7 @@ public class C_ProjectileMiniGame : C_Projectile
 
     protected override void Start()
     {
-        base.Start();
+        
         Direction();
         LauncheManager = FindFirstObjectByType<C_LauncherManager>().gameObject;
         if(LauncheManager != null)
@@ -22,6 +22,7 @@ public class C_ProjectileMiniGame : C_Projectile
             Hit = LauncheManager.GetComponent<C_LauncherManager>();
             SpeedY = Random.Range(minForce, maxForce);
         }
+        base.Start();
 
     }
 
