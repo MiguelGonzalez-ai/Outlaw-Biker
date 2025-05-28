@@ -8062,7 +8062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7f315672d2f4a409037b16a28f7e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 7847881397320503018}
   AuxCollectibles: 0
   CollectiblesCounter: 0
   Enemies: []
@@ -8889,7 +8889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: 0
-  NextScene: Minigame1
+  NextScene: Minigame2
 --- !u!4 &1990658735
 Transform:
   m_ObjectHideFlags: 0
@@ -9655,6 +9655,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09837e326a733fb45a5873419ac2b30b, type: 3}
+--- !u!1 &7847881397320503018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5392228773106870394, guid: 09837e326a733fb45a5873419ac2b30b, type: 3}
+  m_PrefabInstance: {fileID: 7847881397320503017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8483138691996140628 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4371190556965172781, guid: 7452e04c68297104884172a43baef00d, type: 3}
