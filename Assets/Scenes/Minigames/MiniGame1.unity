@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: 2
-  NextScene: Level 1
+  NextScene: Level 2
 --- !u!4 &427884083
 Transform:
   m_ObjectHideFlags: 0

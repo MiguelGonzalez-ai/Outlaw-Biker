@@ -715,7 +715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: 2
-  NextScene: Level 1
+  NextScene: Level 3
 --- !u!1 &1369459128
 GameObject:
   m_ObjectHideFlags: 0
