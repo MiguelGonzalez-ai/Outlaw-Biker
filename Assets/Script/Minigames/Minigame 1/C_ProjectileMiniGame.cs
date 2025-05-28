@@ -12,16 +12,15 @@ public class C_ProjectileMiniGame : C_Projectile
     [SerializeField] private float minForce;
     [SerializeField] private float maxForce;
 
-    void Start()
+    protected override void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        base.Start();
         Direction();
         LauncheManager = FindFirstObjectByType<C_LauncherManager>().gameObject;
         if(LauncheManager != null)
         {
             Hit = LauncheManager.GetComponent<C_LauncherManager>();
             SpeedY = Random.Range(minForce, maxForce);
-            StartCoroutine(Launch(WaitTime));
         }
 
     }
@@ -38,13 +37,9 @@ public class C_ProjectileMiniGame : C_Projectile
         DirectionRotation = (Aux >= 6) ? 1 : -1;  
     }
 
-    protected override IEnumerator Launch(float WaitTime)
-    {
-        yield return base.Launch(WaitTime);
-    }
-
     private void OnMouseDown()
     {
+        if (C_Managment.Instance.GetIsPaused()) return;
         if (gameObject.CompareTag("Ball"))
         {
             Hit.IncreaseHits();

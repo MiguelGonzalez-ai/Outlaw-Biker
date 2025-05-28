@@ -2,16 +2,23 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class C_PlayerLife : MonoBehaviour
 {
-    private enum ELevelPlayer
-    {
-        ELP_AverageLevel,
-        ELP_BossLevel
-    }
+
     private Vector2 Spawn;
-    [SerializeField] private ELevelPlayer CurrentLevel;
+    private ELevel CurrentLevel => C_Managment.Instance.GetCurrentLevel();
     [SerializeField] private Image PlayerLife;
+
+    //Public Functions
+    public void Healing(float Amount)
+    {
+        PlayerLife.fillAmount = Mathf.Clamp(PlayerLife.fillAmount + Amount, 0, 1);
+    }
+    public void TakingDamage(float Amount)
+    {
+        PlayerLife.fillAmount = Mathf.Clamp(PlayerLife.fillAmount - Amount, 0, 1);
+    }
 
 
     void Start()
@@ -33,23 +40,16 @@ public class C_PlayerLife : MonoBehaviour
     {
         switch (CurrentLevel)
         {
-            case ELevelPlayer.ELP_AverageLevel:
+            case ELevel.EL_AverageLevel:
                 transform.position = Spawn;
                 PlayerLife.fillAmount = 1;
                 break;
-            case ELevelPlayer.ELP_BossLevel:
+            case ELevel.EL_BossLevel:
                 Destroy(gameObject);
+                break;
+            default:
                 break;
         }
     }
 
-    public void Healing(float Amount)
-    {
-        PlayerLife.fillAmount = Mathf.Clamp(PlayerLife.fillAmount + Amount, 0, 1);
-    }
-
-    public void TakingDamage(float Amount)
-    {
-        PlayerLife.fillAmount = Mathf.Clamp(PlayerLife.fillAmount - Amount, 0, 1);
-    }
 }

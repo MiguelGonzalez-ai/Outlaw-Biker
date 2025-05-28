@@ -1,5 +1,7 @@
 using UnityEngine;
 
+
+
 public class C_EnemyController : MonoBehaviour
 {
     private enum EEnemyState
@@ -61,7 +63,6 @@ public class C_EnemyController : MonoBehaviour
     {
         if (bBehind && EnemyState == EEnemyState.EES_Idle) //Si el jugador esta atras y el enemigo se encuentra inactivo, se volteara
         {
-            Debug.Log("Volteando");
             EnemyState = EEnemyState.EES_Turning;
             ChangeSide();
         }

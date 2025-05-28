@@ -12,7 +12,10 @@ public class C_BossLife : MonoBehaviour
 
     void Start()
     {
-        BossLife.fillAmount = 1;
+        if(BossLife != null)
+        {
+            BossLife.fillAmount = 1;
+        }
     }
 
     public void TakingDamage(float Damage)

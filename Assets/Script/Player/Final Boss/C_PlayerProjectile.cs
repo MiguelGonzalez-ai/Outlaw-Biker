@@ -3,24 +3,8 @@ using UnityEngine;
 
 public class C_PlayerProjectile : C_Projectile
 {
-    private GameObject Boss;
-    private C_BossLife BossLife;
+    private C_BossLife BossLife => C_Managment.Instance.BossLife;
     [SerializeField] private float Damage;
-    void Start()
-    {
-        Boss = FindFirstObjectByType<C_BossLife>().gameObject;
-        if(Boss != null)
-        {
-            BossLife = Boss.GetComponent<C_BossLife>();
-        }
-        rb = GetComponent<Rigidbody2D>();
-        StartCoroutine(Launch(WaitTime));
-    }
-    
-    protected override IEnumerator Launch(float WaitTime)
-    {
-        yield return base.Launch(WaitTime);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
