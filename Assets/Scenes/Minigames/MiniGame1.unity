@@ -437,9 +437,9 @@ MonoBehaviour:
   Projectile: {fileID: 6081477340776407003, guid: 71ea48d186d603b40803c4711d89699a, type: 3}
   Counter: {fileID: 1379549427}
   Main: {fileID: 1189175442}
-  MinimumProjectiles: 20
+  MinimumProjectiles: 1
   SpawnIntervals: 1
-  TimeMinigame: 60
+  TimeMinigame: 10
   TimeToChangeScene: 5
 --- !u!4 &960936984
 Transform:

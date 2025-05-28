@@ -8642,7 +8642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: 0
-  NextScene: Level Boss
+  NextScene: Level  Boss
 --- !u!4 &1990658735
 Transform:
   m_ObjectHideFlags: 0

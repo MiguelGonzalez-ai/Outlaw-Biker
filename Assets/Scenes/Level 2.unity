@@ -8642,7 +8642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: 0
-  NextScene: Minigame2
+  NextScene: MiniGame2
 --- !u!4 &1990658735
 Transform:
   m_ObjectHideFlags: 0
