@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 83e6e9b84a74eee4b9f818e8182f9225
+guid: a4d7b5dd30c09d348b21343835bdcec5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2570234045255437451
-    second: Posible tienda_0
+      213: -855298285791758126
+    second: 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Posible tienda_0
+      name: 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 13
-        width: 463
-        height: 402
+        y: 0
+        width: 256
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8cc0191f3e4ba320800000000000000
-      internalID: 2570234045255437451
+      spriteID: 2d8b16a9dbe5124f0800000000000000
+      internalID: -855298285791758126
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Posible tienda_0: 2570234045255437451
+      1_0: -855298285791758126
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

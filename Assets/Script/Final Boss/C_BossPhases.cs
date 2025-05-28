@@ -77,7 +77,6 @@ public class C_BossPhases : MonoBehaviour
     {
         if(bContact && ProjectilePhase1 != null)
         {
-            Debug.LogWarning("Disparando Fase 1");
             GameObject Projectile = Instantiate(ProjectilePhase1, LaunchPositionPhase1.position, Quaternion.identity);
             C_BossProjectile1 AuxProjectile = Projectile.GetComponent<C_BossProjectile1>();
             AuxProjectile.Trajectory = TrajectoryPhase1;
@@ -90,7 +89,6 @@ public class C_BossPhases : MonoBehaviour
     {
         if(bContact && ProjectilePhase2 != null && Canon != null)
         {
-            Debug.LogWarning("Disparando Fase 2");
             Instantiate(ProjectilePhase2, LaunchPositionPhase2.position, Canon.transform.rotation);
             CounterProjectiles++;
         }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8b99a8076acf39c4fb579fb75892acec
+guid: d2ee15f43f4c5d3419be53afa52439a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3869723161923446034
-    second: fondo prototipo_0
+      213: 3599509139752596773
+    second: carro-nivel-medio_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fondo prototipo_0
+      name: carro-nivel-medio_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 144
+        x: 203
+        y: 271
+        width: 207
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eea9372794bfb4ac0800000000000000
-      internalID: -3869723161923446034
+      spriteID: 525b9b8dd7604f130800000000000000
+      internalID: 3599509139752596773
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fondo prototipo_0: -3869723161923446034
+      carro-nivel-medio_0: 3599509139752596773
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

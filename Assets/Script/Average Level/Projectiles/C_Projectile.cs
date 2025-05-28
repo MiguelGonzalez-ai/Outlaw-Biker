@@ -14,13 +14,13 @@ public class C_Projectile : MonoBehaviour
      */
     public void SetProjectileSide(int SideEnemy) { Side = SideEnemy; }
 
-    void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(Launch(WaitTime));
     }
 
-    protected virtual IEnumerator Launch(float WaitTime)
+    protected IEnumerator Launch(float WaitTime)
     {
 
         Vector2 velocity = new Vector2(Side * SpeedX, SpeedY);

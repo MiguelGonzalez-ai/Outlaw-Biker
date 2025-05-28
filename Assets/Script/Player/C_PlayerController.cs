@@ -1,22 +1,24 @@
 using UnityEngine;
 
+
 //Clase maneja entradas de movimiento del jugador
 public class C_PlayerController : MonoBehaviour
 {
-    enum EStatePlayer
+    private enum EStatePlayer
     {
         ESP_Idle,
         ESP_Jump,
         ESP_Run,
         ESP_Attacking
     }
+
     private Rigidbody2D rb;
     private Animator Animator;
     private float XInput; //Entradas valores en X
     private float Horizontal; //Entradas en X Vartiable Aux
     private int Side; //Mira el lado que esta mirando el jugador ( 1 = Der, -1 = Izq)
     private bool bWinner; //Comprueba si el jugador gano el nivel
-    private EStatePlayer StatePlayer;
+    [SerializeField] private EStatePlayer StatePlayer;
     [SerializeField] GameObject FinalHeight; //Altura del final del nivel
     [SerializeField] float Speed; //Velocidad jugador
     [SerializeField] float JumpForce; //Fuerza de salto

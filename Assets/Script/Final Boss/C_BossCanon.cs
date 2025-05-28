@@ -26,7 +26,7 @@ public class C_BossCanon : MonoBehaviour
 
     private void CanonRotation()
     {
-        Debug.Log("Rotando ");
+        
         if (PlayerDirection == null) return;
         PlayerDirection = ((Vector2)PlayerPosition.position - (Vector2)transform.position).normalized;
         transform.right = PlayerDirection;
