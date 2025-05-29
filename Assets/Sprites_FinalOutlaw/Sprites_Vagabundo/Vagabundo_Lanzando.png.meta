@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 5d37111f21088e544aa64ab5298d8d99
+guid: 9d152502b28f72e4c980b06b43735851
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3241556694599369520
-    second: Manos_85_0
+      213: -8738782352772747341
+    second: Vagabundo_Lanzando_0
   - first:
-      213: 4558567655180318482
-    second: Manos_85_1
+      213: 1873293418711250089
+    second: Vagabundo_Lanzando_1
+  - first:
+      213: 4757542582900990519
+    second: Vagabundo_Lanzando_2
+  - first:
+      213: -37187768939885610
+    second: Vagabundo_Lanzando_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manos_85_0
+      name: Vagabundo_Lanzando_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 118
-        width: 2280
-        height: 882
+        y: 0
+        width: 132
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03382e4a3a25cfc20800000000000000
-      internalID: 3241556694599369520
+      spriteID: 3bf278d00cb99b680800000000000000
+      internalID: -8738782352772747341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Manos_85_1
+      name: Vagabundo_Lanzando_1
       rect:
         serializedVersion: 2
-        x: 2724
+        x: 186
         y: 0
-        width: 2276
-        height: 878
+        width: 133
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 217bb9b4129434f30800000000000000
-      internalID: 4558567655180318482
+      spriteID: 9a47c5e60764ff910800000000000000
+      internalID: 1873293418711250089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vagabundo_Lanzando_2
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 148
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732ab99c5cf260240800000000000000
+      internalID: 4757542582900990519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vagabundo_Lanzando_3
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2
+        width: 178
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db4952dbe1eb7ff0800000000000000
+      internalID: -37187768939885610
       vertices: []
       indices: 
       edges: []
@@ -159,9 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Manos_85_0: 3241556694599369520
-      Manos_85_1: 4558567655180318482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

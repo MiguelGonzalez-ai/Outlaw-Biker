@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 5d37111f21088e544aa64ab5298d8d99
+guid: 03d92133fbe1425448252c463c432879
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3241556694599369520
-    second: Manos_85_0
+      213: 4068643211352046359
+    second: Mono_Lanzando_0
   - first:
-      213: 4558567655180318482
-    second: Manos_85_1
+      213: -7368779981771701804
+    second: Mono_Lanzando_1
+  - first:
+      213: -7749414177897290513
+    second: Mono_Lanzando_2
+  - first:
+      213: -8382895645499636382
+    second: Mono_Lanzando_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manos_85_0
+      name: Mono_Lanzando_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 118
-        width: 2280
-        height: 882
+        y: 0
+        width: 128
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03382e4a3a25cfc20800000000000000
-      internalID: 3241556694599369520
+      spriteID: 71b7172b179b67830800000000000000
+      internalID: 4068643211352046359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Manos_85_1
+      name: Mono_Lanzando_1
       rect:
         serializedVersion: 2
-        x: 2724
+        x: 165
         y: 0
-        width: 2276
-        height: 878
+        width: 129
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 217bb9b4129434f30800000000000000
-      internalID: 4558567655180318482
+      spriteID: 4d10d76e5a5dcb990800000000000000
+      internalID: -7368779981771701804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Lanzando_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1
+        width: 146
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe46e050ddc847490800000000000000
+      internalID: -7749414177897290513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Lanzando_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1
+        width: 177
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26543dc23d8f9ab80800000000000000
+      internalID: -8382895645499636382
       vertices: []
       indices: 
       edges: []
@@ -159,9 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Manos_85_0: 3241556694599369520
-      Manos_85_1: 4558567655180318482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

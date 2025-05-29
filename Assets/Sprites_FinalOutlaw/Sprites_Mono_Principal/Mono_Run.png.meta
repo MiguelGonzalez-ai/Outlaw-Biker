@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 5d37111f21088e544aa64ab5298d8d99
+guid: cb97575231d27cb48a3ad64a1590990b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3241556694599369520
-    second: Manos_85_0
+      213: 8238236841904444488
+    second: Mono_Run_0
   - first:
-      213: 4558567655180318482
-    second: Manos_85_1
+      213: 5884408576665613906
+    second: Mono_Run_1
+  - first:
+      213: 6971268083137620067
+    second: Mono_Run_2
+  - first:
+      213: 5130487907147242376
+    second: Mono_Run_3
+  - first:
+      213: 1025134049096518357
+    second: Mono_Run_4
+  - first:
+      213: -8832643292300214973
+    second: Mono_Run_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manos_85_0
+      name: Mono_Run_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 118
-        width: 2280
-        height: 882
+        y: 0
+        width: 138
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03382e4a3a25cfc20800000000000000
-      internalID: 3241556694599369520
+      spriteID: 844104972c8145270800000000000000
+      internalID: 8238236841904444488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Manos_85_1
+      name: Mono_Run_1
       rect:
         serializedVersion: 2
-        x: 2724
+        x: 184
         y: 0
-        width: 2276
-        height: 878
+        width: 131
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 217bb9b4129434f30800000000000000
-      internalID: 4558567655180318482
+      spriteID: 2567a6d6c6e99a150800000000000000
+      internalID: 5884408576665613906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Run_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 140
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368af61e26beeb060800000000000000
+      internalID: 6971268083137620067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Run_3
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1
+        width: 145
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88bd2fda197233740800000000000000
+      internalID: 5130487907147242376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Run_4
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 131
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da4e8b7cf10a3e00800000000000000
+      internalID: 1025134049096518357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Run_5
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 0
+        width: 133
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d75b619b52c6580800000000000000
+      internalID: -8832643292300214973
       vertices: []
       indices: 
       edges: []
@@ -159,9 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Manos_85_0: 3241556694599369520
-      Manos_85_1: 4558567655180318482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

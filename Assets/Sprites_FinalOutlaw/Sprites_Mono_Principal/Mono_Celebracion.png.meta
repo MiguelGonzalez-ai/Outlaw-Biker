@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 5d37111f21088e544aa64ab5298d8d99
+guid: 903fdb2477c17644aa6d4e0af264bd81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3241556694599369520
-    second: Manos_85_0
+      213: 2246102845361831673
+    second: Mono_Celebracion_0
   - first:
-      213: 4558567655180318482
-    second: Manos_85_1
+      213: -7391419388758099644
+    second: Mono_Celebracion_1
+  - first:
+      213: 3228105803033877535
+    second: Mono_Celebracion_2
+  - first:
+      213: -8079017638918990730
+    second: Mono_Celebracion_3
+  - first:
+      213: 4327871085081733971
+    second: Mono_Celebracion_4
+  - first:
+      213: 3858740816705883511
+    second: Mono_Celebracion_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manos_85_0
+      name: Mono_Celebracion_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 118
-        width: 2280
-        height: 882
+        y: 0
+        width: 121
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03382e4a3a25cfc20800000000000000
-      internalID: 3241556694599369520
+      spriteID: 9fe39c233a2cb2f10800000000000000
+      internalID: 2246102845361831673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Manos_85_1
+      name: Mono_Celebracion_1
       rect:
         serializedVersion: 2
-        x: 2724
+        x: 162
         y: 0
-        width: 2276
-        height: 878
+        width: 129
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 217bb9b4129434f30800000000000000
-      internalID: 4558567655180318482
+      spriteID: 44973233a376c6990800000000000000
+      internalID: -7391419388758099644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Celebracion_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 126
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c1637ef198ccc20800000000000000
+      internalID: 3228105803033877535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Celebracion_3
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 127
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6745e1a034091ef80800000000000000
+      internalID: -8079017638918990730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Celebracion_4
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 124
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b2bf362dfaf0c30800000000000000
+      internalID: 4327871085081733971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Celebracion_5
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 0
+        width: 122
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d0e0c04500d8530800000000000000
+      internalID: 3858740816705883511
       vertices: []
       indices: 
       edges: []
@@ -159,9 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Manos_85_0: 3241556694599369520
-      Manos_85_1: 4558567655180318482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
