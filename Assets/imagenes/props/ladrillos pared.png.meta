@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ladrillos pared_0: 4483042594696321926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

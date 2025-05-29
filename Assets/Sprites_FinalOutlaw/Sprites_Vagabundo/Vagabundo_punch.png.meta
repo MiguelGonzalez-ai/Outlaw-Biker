@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 5d37111f21088e544aa64ab5298d8d99
+guid: 5bfc6182b2d266c43abd5096af8e8696
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3241556694599369520
-    second: Manos_85_0
+      213: -2992716613559724236
+    second: Vagabundo_punch_0
   - first:
-      213: 4558567655180318482
-    second: Manos_85_1
+      213: -8156885622723216875
+    second: Vagabundo_punch_1
+  - first:
+      213: 3349785881815297052
+    second: Vagabundo_punch_2
+  - first:
+      213: -3406440368100619697
+    second: Vagabundo_punch_3
+  - first:
+      213: -1948610092905802231
+    second: Vagabundo_punch_4
+  - first:
+      213: -4756840247608643634
+    second: Vagabundo_punch_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manos_85_0
+      name: Vagabundo_punch_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 118
-        width: 2280
-        height: 882
+        y: 0
+        width: 132
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03382e4a3a25cfc20800000000000000
-      internalID: 3241556694599369520
+      spriteID: 437dc57981cb776d0800000000000000
+      internalID: -2992716613559724236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Manos_85_1
+      name: Vagabundo_punch_1
       rect:
         serializedVersion: 2
-        x: 2724
-        y: 0
-        width: 2276
-        height: 878
+        x: 179
+        y: 6
+        width: 125
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 217bb9b4129434f30800000000000000
-      internalID: 4558567655180318482
+      spriteID: 51a77104ebbecce80800000000000000
+      internalID: -8156885622723216875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vagabundo_punch_2
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 7
+        width: 135
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c2837f284dc7e20800000000000000
+      internalID: 3349785881815297052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vagabundo_punch_3
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 8
+        width: 136
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4acfc68884e9b0d0800000000000000
+      internalID: -3406440368100619697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vagabundo_punch_4
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 10
+        width: 126
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906db96d17525f4e0800000000000000
+      internalID: -1948610092905802231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vagabundo_punch_5
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 6
+        width: 131
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf61046ffe4cfdb0800000000000000
+      internalID: -4756840247608643634
       vertices: []
       indices: 
       edges: []
@@ -159,9 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Manos_85_0: 3241556694599369520
-      Manos_85_1: 4558567655180318482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
