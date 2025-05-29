@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 06befc3ae3749f647bbcda1af3e2372b
+guid: 945d0289bf8e7e14fb4e91e120a7874d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4873741201276772220
-    second: jefe fina31_0
+      213: 2016334469380030449
+    second: molotov1.2_0
   - first:
-      213: -6118073037011090221
-    second: jefe fina31_1
-  - first:
-      213: 7830782841428997163
-    second: jefe fina31_2
+      213: -3064122303483027911
+    second: molotov1.2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jefe fina31_0
+      name: molotov1.2_0
       rect:
         serializedVersion: 2
-        x: 221
-        y: 0
-        width: 70
-        height: 184
+        x: 25
+        y: 25
+        width: 33
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48066ba133efc5cb0800000000000000
-      internalID: -4873741201276772220
+      spriteID: 1ffb5c354857bfb10800000000000000
+      internalID: 2016334469380030449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jefe fina31_1
+      name: molotov1.2_1
       rect:
         serializedVersion: 2
-        x: 574
-        y: 0
-        width: 71
-        height: 189
+        x: 58
+        y: 25
+        width: 8
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,30 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d40f0fdcfc381ba0800000000000000
-      internalID: -6118073037011090221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jefe fina31_2
-      rect:
-        serializedVersion: 2
-        x: 938
-        y: 0
-        width: 71
-        height: 163
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b24799841878cac60800000000000000
-      internalID: 7830782841428997163
+      spriteID: 93eda88dffc0a75d0800000000000000
+      internalID: -3064122303483027911
       vertices: []
       indices: 
       edges: []
@@ -184,10 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      jefe fina31_0: -4873741201276772220
-      jefe fina31_1: -6118073037011090221
-      jefe fina31_2: 7830782841428997163
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
