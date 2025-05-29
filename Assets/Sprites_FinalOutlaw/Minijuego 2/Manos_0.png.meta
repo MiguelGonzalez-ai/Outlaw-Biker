@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2b90d09c0fcc86444a455dbe619b64ba
+guid: b2923af51e03f5c469e4d7166630aba4
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -114,7 +114,7 @@ TextureImporter:
         width: 2631
         height: 886
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -136,7 +136,7 @@ TextureImporter:
         width: 2629
         height: 912
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,33 +149,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Manos_0_2
-      rect:
-        serializedVersion: 2
-        x: 911
-        y: 84
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0afe8ba5bfcf0aba0800000000000000
-      internalID: -6079581340461109344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 60a31602592bded4caffe58b2b5f02db
     internalID: 0
     vertices: []
     indices: 
@@ -184,7 +162,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Manos_0_0: 6155539653620453997
+      Manos_0_1: 6035680733243696835
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

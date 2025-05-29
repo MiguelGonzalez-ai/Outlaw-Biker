@@ -13,12 +13,14 @@ public class ArmManager : MonoBehaviour
         ERA_Round3,
         ERA_ArmWon
     }
+
     TextMeshProUGUI TextCounter;
     TextMeshProUGUI TextInstructions;
     private bool bStart;
     private bool bFirstTime;
     private bool bWon;
     private float CurrentOppositeForce;
+
     [SerializeField] private GameObject Counter;
     [SerializeField] private GameObject Instructions;
     [SerializeField] private Image Bar;
@@ -30,6 +32,7 @@ public class ArmManager : MonoBehaviour
     [SerializeField] private float ForceRound2;
     [SerializeField] private float ForceRound3;
 
+    [SerializeField] private Animator handAnimator; // Añadido
 
     void Start()
     {
@@ -46,16 +49,14 @@ public class ArmManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-        if (bStart) {
+        if (bStart)
+        {
             InputsBar();
             CurrentRoundArm();
+            UpdateHandState(); // Actualiza el estado de las manos
         }
-        
-        
     }
 
     private void InputsBar()
@@ -66,7 +67,7 @@ public class ArmManager : MonoBehaviour
         }
         DecreaseForce(CurrentOppositeForce);
     }
-    
+
     private void CurrentRoundArm()
     {
         if (Bar.fillAmount >= 0.99)
@@ -88,14 +89,12 @@ public class ArmManager : MonoBehaviour
             bWon = false;
             TextInstructions.text = "You lost...";
             StartCoroutine(StartingGame(WaitTimeToStart));
-
         }
     }
 
     private void ChangingRound()
     {
-        
-        switch(CurrentRound)
+        switch (CurrentRound)
         {
             case ERoundArm.ERA_Round1:
                 Debug.Log("Round 1");
@@ -112,25 +111,21 @@ public class ArmManager : MonoBehaviour
             case ERoundArm.ERA_ArmWon:
                 Debug.Log("Ganaste");
                 TextInstructions.text = "You Won!! ";
-                if(C_Managment.Instance != null)
-                {
-                    StartCoroutine(C_Managment.Instance.ChangeScene(WaitTimeToChangeScene));
-                }
                 break;
         }
     }
 
     IEnumerator StartingGame(float WaitTime)
     {
-        if(bFirstTime)
+        if (bFirstTime)
         {
-            TextInstructions.text = "You must press 'space' to push the bar and win at least 3 rounds";
+            TextInstructions.text = "Press 'space' to push the bar and win 3 rounds!";
         }
-        else if(!bFirstTime && !bWon)
+        else if (!bFirstTime && !bWon)
         {
             yield return new WaitForSeconds(3);
             Bar.fillAmount = 0.5f;
-            TextInstructions.text = "Do it Again...";
+            TextInstructions.text = "Try Again...";
             yield return new WaitForSeconds(3);
         }
         TextCounter.enabled = true;
@@ -139,7 +134,7 @@ public class ArmManager : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             WaitTime--;
-            TextCounter.text = ""+ WaitTime;
+            TextCounter.text = "" + WaitTime;
             if (WaitTime == 0)
             {
                 TextCounter.enabled = false;
@@ -149,6 +144,7 @@ public class ArmManager : MonoBehaviour
             }
         }
     }
+
     public void IncreaseForce(float force)
     {
         Bar.fillAmount = Mathf.Clamp(Bar.fillAmount + force, 0f, 1f);
@@ -156,8 +152,16 @@ public class ArmManager : MonoBehaviour
 
     public void DecreaseForce(float force)
     {
-        
-        Bar.fillAmount = Mathf.Clamp(Bar.fillAmount - (force*Time.deltaTime), 0f, 1f);
+        Bar.fillAmount = Mathf.Clamp(Bar.fillAmount - (force * Time.deltaTime), 0f, 1f);
+    }
 
+    private void UpdateHandState() // Actualiza el Animator según el progreso
+    {
+        if (handAnimator != null)
+        {
+            float barValue = Bar.fillAmount; // Obtén el valor actual de la barra
+            Debug.Log("BarProgress enviado al Animator: " + barValue); // Muestra el valor en la consola
+            handAnimator.SetFloat("BarProgress", barValue); // Envía el valor al Animator
+        }
     }
 }

@@ -235,11 +235,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/imagenes/Fondo por capas/Jefe final/jefe fina21.png.meta
       jefe fina21_0: -6350816154671486570
       jefe fina21_1: 4131641865484389834
       jefe fina21_2: 6978122483565650860
       jefe fina21_3: 6791151596038651510
       jefe fina21_4: -1428603882800251195
+========
+      Mono_Attack1.2_0: -4214609391841974996
+      Mono_Attack1.2_1: -6680494738365063766
+      Mono_Attack1.2_2: -3382737534657210245
+      Mono_Attack1.2_3: 6773416195392498679
+      Mono_Attack1.2_4: -8166363225830453723
+      Mono_Attack1.2_5: -5595777738221167506
+>>>>>>>> Urrego:Assets/Sprites_FinalOutlaw/Mono_Attack1/Mono_Attack1.2.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

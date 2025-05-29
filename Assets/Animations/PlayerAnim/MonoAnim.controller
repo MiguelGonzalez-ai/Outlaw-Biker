@@ -136,7 +136,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BikeAnim
+  m_Name: MonoAnim
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Running
@@ -210,7 +210,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 308d2d5cdaea6364cbdc5959dedf1e6c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 334f6c7e3b537b040af3b2258f5ccabb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
