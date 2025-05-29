@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 1683cf2171a3d674d8bc4d5934dccccb
+guid: f82e62bbc8a744e4bb28b7e3b98e8be7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4214609391841974996
-    second: Mono_Attack1.2_0
+      213: 2246102845361831673
+    second: Mono_Celebracion_0
   - first:
-      213: -6680494738365063766
-    second: Mono_Attack1.2_1
+      213: -7391419388758099644
+    second: Mono_Celebracion_1
   - first:
-      213: -3382737534657210245
-    second: Mono_Attack1.2_2
+      213: 3228105803033877535
+    second: Mono_Celebracion_2
   - first:
-      213: 6773416195392498679
-    second: Mono_Attack1.2_3
+      213: -8079017638918990730
+    second: Mono_Celebracion_3
   - first:
-      213: -8166363225830453723
-    second: Mono_Attack1.2_4
+      213: 4327871085081733971
+    second: Mono_Celebracion_4
   - first:
-      213: -5595777738221167506
-    second: Mono_Attack1.2_5
+      213: 3858740816705883511
+    second: Mono_Celebracion_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mono_Attack1.2_0
+      name: Mono_Celebracion_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 152
-        height: 228
+        width: 121
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c25eb3c8613b285c0800000000000000
-      internalID: -4214609391841974996
+      spriteID: 9fe39c233a2cb2f10800000000000000
+      internalID: 2246102845361831673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_1
+      name: Mono_Celebracion_1
       rect:
         serializedVersion: 2
-        x: 200
+        x: 162
         y: 0
-        width: 154
-        height: 228
+        width: 129
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aad52e32e6d1a43a0800000000000000
-      internalID: -6680494738365063766
+      spriteID: 44973233a376c6990800000000000000
+      internalID: -7391419388758099644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_2
+      name: Mono_Celebracion_2
       rect:
         serializedVersion: 2
-        x: 402
+        x: 332
         y: 0
-        width: 154
-        height: 228
+        width: 126
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b78506e722a1e01d0800000000000000
-      internalID: -3382737534657210245
+      spriteID: f1c1637ef198ccc20800000000000000
+      internalID: 3228105803033877535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_3
+      name: Mono_Celebracion_3
       rect:
         serializedVersion: 2
-        x: 589
+        x: 497
         y: 0
-        width: 154
-        height: 228
+        width: 127
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fb6f328422000e50800000000000000
-      internalID: 6773416195392498679
+      spriteID: 6745e1a034091ef80800000000000000
+      internalID: -8079017638918990730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_4
+      name: Mono_Celebracion_4
       rect:
         serializedVersion: 2
-        x: 796
+        x: 654
         y: 0
-        width: 198
-        height: 228
+        width: 124
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52e0091d9ef3bae80800000000000000
-      internalID: -8166363225830453723
+      spriteID: 35b2bf362dfaf0c30800000000000000
+      internalID: 4327871085081733971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_5
+      name: Mono_Celebracion_5
       rect:
         serializedVersion: 2
-        x: 1029
+        x: 813
         y: 0
-        width: 149
-        height: 228
+        width: 122
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6cd9477bcdc752b0800000000000000
-      internalID: -5595777738221167506
+      spriteID: 77d0e0c04500d8530800000000000000
+      internalID: 3858740816705883511
       vertices: []
       indices: 
       edges: []
@@ -260,21 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/Sprites_FinalOutlaw/Mono_Attack1/Mono_Attack1.2.png.meta
-      Mono_Attack1.2_0: -4214609391841974996
-      Mono_Attack1.2_1: -6680494738365063766
-      Mono_Attack1.2_2: -3382737534657210245
-      Mono_Attack1.2_3: 6773416195392498679
-      Mono_Attack1.2_4: -8166363225830453723
-      Mono_Attack1.2_5: -5595777738221167506
-=======
-      Vagabundo_Attack1_0: 8543128903437587979
-      Vagabundo_Attack1_1: 4834066275432497647
-      Vagabundo_Attack1_2: -4765354215988485380
-      Vagabundo_Attack1_3: -2351011560927902915
-      Vagabundo_Attack1_4: -3216814855299569333
-      Vagabundo_Attack1_5: 160133890891186562
->>>>>>> Stashed changes:Assets/Sprites_FinalOutlaw/Sprites_Vagabundo/Vagabundo_Attack1.png.meta
+      Mono_Celebracion_0: 2246102845361831673
+      Mono_Celebracion_1: -7391419388758099644
+      Mono_Celebracion_2: 3228105803033877535
+      Mono_Celebracion_3: -8079017638918990730
+      Mono_Celebracion_4: 4327871085081733971
+      Mono_Celebracion_5: 3858740816705883511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

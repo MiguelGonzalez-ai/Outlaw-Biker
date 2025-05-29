@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 1683cf2171a3d674d8bc4d5934dccccb
+guid: 5bfc6182b2d266c43abd5096af8e8696
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4214609391841974996
-    second: Mono_Attack1.2_0
+      213: -2992716613559724236
+    second: Vagabundo_punch_0
   - first:
-      213: -6680494738365063766
-    second: Mono_Attack1.2_1
+      213: -8156885622723216875
+    second: Vagabundo_punch_1
   - first:
-      213: -3382737534657210245
-    second: Mono_Attack1.2_2
+      213: 3349785881815297052
+    second: Vagabundo_punch_2
   - first:
-      213: 6773416195392498679
-    second: Mono_Attack1.2_3
+      213: -3406440368100619697
+    second: Vagabundo_punch_3
   - first:
-      213: -8166363225830453723
-    second: Mono_Attack1.2_4
+      213: -1948610092905802231
+    second: Vagabundo_punch_4
   - first:
-      213: -5595777738221167506
-    second: Mono_Attack1.2_5
+      213: -4756840247608643634
+    second: Vagabundo_punch_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mono_Attack1.2_0
+      name: Vagabundo_punch_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 152
-        height: 228
+        width: 132
+        height: 221
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c25eb3c8613b285c0800000000000000
-      internalID: -4214609391841974996
+      spriteID: 437dc57981cb776d0800000000000000
+      internalID: -2992716613559724236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_1
+      name: Vagabundo_punch_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 154
-        height: 228
+        x: 179
+        y: 6
+        width: 125
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aad52e32e6d1a43a0800000000000000
-      internalID: -6680494738365063766
+      spriteID: 51a77104ebbecce80800000000000000
+      internalID: -8156885622723216875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_2
+      name: Vagabundo_punch_2
       rect:
         serializedVersion: 2
-        x: 402
-        y: 0
-        width: 154
-        height: 228
+        x: 351
+        y: 7
+        width: 135
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b78506e722a1e01d0800000000000000
-      internalID: -3382737534657210245
+      spriteID: c1c2837f284dc7e20800000000000000
+      internalID: 3349785881815297052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_3
+      name: Vagabundo_punch_3
       rect:
         serializedVersion: 2
-        x: 589
-        y: 0
-        width: 154
-        height: 228
+        x: 544
+        y: 8
+        width: 136
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fb6f328422000e50800000000000000
-      internalID: 6773416195392498679
+      spriteID: f4acfc68884e9b0d0800000000000000
+      internalID: -3406440368100619697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_4
+      name: Vagabundo_punch_4
       rect:
         serializedVersion: 2
-        x: 796
-        y: 0
-        width: 198
-        height: 228
+        x: 747
+        y: 10
+        width: 126
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52e0091d9ef3bae80800000000000000
-      internalID: -8166363225830453723
+      spriteID: 906db96d17525f4e0800000000000000
+      internalID: -1948610092905802231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_5
+      name: Vagabundo_punch_5
       rect:
         serializedVersion: 2
-        x: 1029
-        y: 0
-        width: 149
-        height: 228
+        x: 904
+        y: 6
+        width: 131
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6cd9477bcdc752b0800000000000000
-      internalID: -5595777738221167506
+      spriteID: ecf61046ffe4cfdb0800000000000000
+      internalID: -4756840247608643634
       vertices: []
       indices: 
       edges: []
@@ -260,21 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/Sprites_FinalOutlaw/Mono_Attack1/Mono_Attack1.2.png.meta
-      Mono_Attack1.2_0: -4214609391841974996
-      Mono_Attack1.2_1: -6680494738365063766
-      Mono_Attack1.2_2: -3382737534657210245
-      Mono_Attack1.2_3: 6773416195392498679
-      Mono_Attack1.2_4: -8166363225830453723
-      Mono_Attack1.2_5: -5595777738221167506
-=======
-      Vagabundo_Attack1_0: 8543128903437587979
-      Vagabundo_Attack1_1: 4834066275432497647
-      Vagabundo_Attack1_2: -4765354215988485380
-      Vagabundo_Attack1_3: -2351011560927902915
-      Vagabundo_Attack1_4: -3216814855299569333
-      Vagabundo_Attack1_5: 160133890891186562
->>>>>>> Stashed changes:Assets/Sprites_FinalOutlaw/Sprites_Vagabundo/Vagabundo_Attack1.png.meta
+      Vagabundo_punch_0: -2992716613559724236
+      Vagabundo_punch_1: -8156885622723216875
+      Vagabundo_punch_2: 3349785881815297052
+      Vagabundo_punch_3: -3406440368100619697
+      Vagabundo_punch_4: -1948610092905802231
+      Vagabundo_punch_5: -4756840247608643634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

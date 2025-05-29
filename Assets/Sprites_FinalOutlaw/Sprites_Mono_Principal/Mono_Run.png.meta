@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 1683cf2171a3d674d8bc4d5934dccccb
+guid: 09c185db62e60354b9ad10a7e0d222e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4214609391841974996
-    second: Mono_Attack1.2_0
+      213: 8238236841904444488
+    second: Mono_Run_0
   - first:
-      213: -6680494738365063766
-    second: Mono_Attack1.2_1
+      213: 5884408576665613906
+    second: Mono_Run_1
   - first:
-      213: -3382737534657210245
-    second: Mono_Attack1.2_2
+      213: 6971268083137620067
+    second: Mono_Run_2
   - first:
-      213: 6773416195392498679
-    second: Mono_Attack1.2_3
+      213: 5130487907147242376
+    second: Mono_Run_3
   - first:
-      213: -8166363225830453723
-    second: Mono_Attack1.2_4
+      213: 1025134049096518357
+    second: Mono_Run_4
   - first:
-      213: -5595777738221167506
-    second: Mono_Attack1.2_5
+      213: -8832643292300214973
+    second: Mono_Run_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mono_Attack1.2_0
+      name: Mono_Run_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 152
-        height: 228
+        width: 138
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c25eb3c8613b285c0800000000000000
-      internalID: -4214609391841974996
+      spriteID: 844104972c8145270800000000000000
+      internalID: 8238236841904444488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_1
+      name: Mono_Run_1
       rect:
         serializedVersion: 2
-        x: 200
+        x: 184
         y: 0
-        width: 154
-        height: 228
+        width: 131
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aad52e32e6d1a43a0800000000000000
-      internalID: -6680494738365063766
+      spriteID: 2567a6d6c6e99a150800000000000000
+      internalID: 5884408576665613906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_2
+      name: Mono_Run_2
       rect:
         serializedVersion: 2
-        x: 402
+        x: 362
         y: 0
-        width: 154
-        height: 228
+        width: 140
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b78506e722a1e01d0800000000000000
-      internalID: -3382737534657210245
+      spriteID: 368af61e26beeb060800000000000000
+      internalID: 6971268083137620067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_3
+      name: Mono_Run_3
       rect:
         serializedVersion: 2
-        x: 589
-        y: 0
-        width: 154
-        height: 228
+        x: 559
+        y: 1
+        width: 145
+        height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fb6f328422000e50800000000000000
-      internalID: 6773416195392498679
+      spriteID: 88bd2fda197233740800000000000000
+      internalID: 5130487907147242376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_4
+      name: Mono_Run_4
       rect:
         serializedVersion: 2
-        x: 796
+        x: 752
         y: 0
-        width: 198
-        height: 228
+        width: 131
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52e0091d9ef3bae80800000000000000
-      internalID: -8166363225830453723
+      spriteID: 5da4e8b7cf10a3e00800000000000000
+      internalID: 1025134049096518357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_5
+      name: Mono_Run_5
       rect:
         serializedVersion: 2
-        x: 1029
+        x: 939
         y: 0
-        width: 149
-        height: 228
+        width: 133
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6cd9477bcdc752b0800000000000000
-      internalID: -5595777738221167506
+      spriteID: 34d75b619b52c6580800000000000000
+      internalID: -8832643292300214973
       vertices: []
       indices: 
       edges: []
@@ -260,21 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/Sprites_FinalOutlaw/Mono_Attack1/Mono_Attack1.2.png.meta
-      Mono_Attack1.2_0: -4214609391841974996
-      Mono_Attack1.2_1: -6680494738365063766
-      Mono_Attack1.2_2: -3382737534657210245
-      Mono_Attack1.2_3: 6773416195392498679
-      Mono_Attack1.2_4: -8166363225830453723
-      Mono_Attack1.2_5: -5595777738221167506
-=======
-      Vagabundo_Attack1_0: 8543128903437587979
-      Vagabundo_Attack1_1: 4834066275432497647
-      Vagabundo_Attack1_2: -4765354215988485380
-      Vagabundo_Attack1_3: -2351011560927902915
-      Vagabundo_Attack1_4: -3216814855299569333
-      Vagabundo_Attack1_5: 160133890891186562
->>>>>>> Stashed changes:Assets/Sprites_FinalOutlaw/Sprites_Vagabundo/Vagabundo_Attack1.png.meta
+      Mono_Run_0: 8238236841904444488
+      Mono_Run_1: 5884408576665613906
+      Mono_Run_2: 6971268083137620067
+      Mono_Run_3: 5130487907147242376
+      Mono_Run_4: 1025134049096518357
+      Mono_Run_5: -8832643292300214973
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

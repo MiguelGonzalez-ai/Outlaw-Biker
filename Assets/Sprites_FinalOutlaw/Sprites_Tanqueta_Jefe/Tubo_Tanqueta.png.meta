@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b5bcf40d08a21dd438d2571587172471
+guid: fd43aa6d8bec02848b53023213c92309
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5288441516514123843
-    second: Vida png_0
+      213: 1590921944361285895
+    second: Tubo_Tanqueta_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vida png_0
+      name: Tubo_Tanqueta_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 12
-        width: 112
-        height: 22
+        x: 0
+        y: 0
+        width: 332
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 340a0473a81546940800000000000000
-      internalID: 5288441516514123843
+      spriteID: 709370f4417141610800000000000000
+      internalID: 1590921944361285895
       vertices: []
       indices: 
       edges: []
@@ -134,13 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<< Updated upstream:Assets/imagenes/props/Vida png.png.meta
-      Vida png_0: 5288441516514123843
-=======
-      Mono_Hurt_0: -4292418454513916243
-      Mono_Hurt_1: -3886533366140886089
->>>>>>> Stashed changes:Assets/Sprites_FinalOutlaw/Sprites_Mono_Principal/Mono_Hurt.png.meta
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

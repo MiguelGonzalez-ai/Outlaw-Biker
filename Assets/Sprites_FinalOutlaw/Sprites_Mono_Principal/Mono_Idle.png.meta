@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 1683cf2171a3d674d8bc4d5934dccccb
+guid: 0c733ac2804d2e04bb2eac4eb78a28aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4214609391841974996
-    second: Mono_Attack1.2_0
+      213: 2715339063172945771
+    second: Mono_Idle_0
   - first:
-      213: -6680494738365063766
-    second: Mono_Attack1.2_1
+      213: 2170505317025492083
+    second: Mono_Idle_1
   - first:
-      213: -3382737534657210245
-    second: Mono_Attack1.2_2
+      213: 3008125441092021677
+    second: Mono_Idle_2
   - first:
-      213: 6773416195392498679
-    second: Mono_Attack1.2_3
-  - first:
-      213: -8166363225830453723
-    second: Mono_Attack1.2_4
-  - first:
-      213: -5595777738221167506
-    second: Mono_Attack1.2_5
+      213: 170702472083257131
+    second: Mono_Idle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mono_Attack1.2_0
+      name: Mono_Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 152
-        height: 228
+        width: 133
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c25eb3c8613b285c0800000000000000
-      internalID: -4214609391841974996
+      spriteID: b675a21dd72dea520800000000000000
+      internalID: 2715339063172945771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_1
+      name: Mono_Idle_1
       rect:
         serializedVersion: 2
-        x: 200
+        x: 166
         y: 0
-        width: 154
-        height: 228
+        width: 135
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aad52e32e6d1a43a0800000000000000
-      internalID: -6680494738365063766
+      spriteID: 37ca664061f2f1e10800000000000000
+      internalID: 2170505317025492083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_2
+      name: Mono_Idle_2
       rect:
         serializedVersion: 2
-        x: 402
+        x: 353
         y: 0
-        width: 154
-        height: 228
+        width: 128
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b78506e722a1e01d0800000000000000
-      internalID: -3382737534657210245
+      spriteID: dadea14a6220fb920800000000000000
+      internalID: 3008125441092021677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mono_Attack1.2_3
+      name: Mono_Idle_3
       rect:
         serializedVersion: 2
-        x: 589
+        x: 529
         y: 0
-        width: 154
-        height: 228
+        width: 132
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,52 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fb6f328422000e50800000000000000
-      internalID: 6773416195392498679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mono_Attack1.2_4
-      rect:
-        serializedVersion: 2
-        x: 796
-        y: 0
-        width: 198
-        height: 228
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52e0091d9ef3bae80800000000000000
-      internalID: -8166363225830453723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mono_Attack1.2_5
-      rect:
-        serializedVersion: 2
-        x: 1029
-        y: 0
-        width: 149
-        height: 228
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6cd9477bcdc752b0800000000000000
-      internalID: -5595777738221167506
+      spriteID: b27bdc27ef47e5200800000000000000
+      internalID: 170702472083257131
       vertices: []
       indices: 
       edges: []
@@ -260,21 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/Sprites_FinalOutlaw/Mono_Attack1/Mono_Attack1.2.png.meta
-      Mono_Attack1.2_0: -4214609391841974996
-      Mono_Attack1.2_1: -6680494738365063766
-      Mono_Attack1.2_2: -3382737534657210245
-      Mono_Attack1.2_3: 6773416195392498679
-      Mono_Attack1.2_4: -8166363225830453723
-      Mono_Attack1.2_5: -5595777738221167506
-=======
-      Vagabundo_Attack1_0: 8543128903437587979
-      Vagabundo_Attack1_1: 4834066275432497647
-      Vagabundo_Attack1_2: -4765354215988485380
-      Vagabundo_Attack1_3: -2351011560927902915
-      Vagabundo_Attack1_4: -3216814855299569333
-      Vagabundo_Attack1_5: 160133890891186562
->>>>>>> Stashed changes:Assets/Sprites_FinalOutlaw/Sprites_Vagabundo/Vagabundo_Attack1.png.meta
+      Mono_Idle_0: 2715339063172945771
+      Mono_Idle_1: 2170505317025492083
+      Mono_Idle_2: 3008125441092021677
+      Mono_Idle_3: 170702472083257131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
