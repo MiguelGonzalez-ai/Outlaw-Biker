@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 06befc3ae3749f647bbcda1af3e2372b
+guid: 1683cf2171a3d674d8bc4d5934dccccb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4873741201276772220
-    second: jefe fina31_0
+      213: -4214609391841974996
+    second: Mono_Attack1.2_0
   - first:
-      213: -6118073037011090221
-    second: jefe fina31_1
+      213: -6680494738365063766
+    second: Mono_Attack1.2_1
   - first:
-      213: 7830782841428997163
-    second: jefe fina31_2
+      213: -3382737534657210245
+    second: Mono_Attack1.2_2
+  - first:
+      213: 6773416195392498679
+    second: Mono_Attack1.2_3
+  - first:
+      213: -8166363225830453723
+    second: Mono_Attack1.2_4
+  - first:
+      213: -5595777738221167506
+    second: Mono_Attack1.2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jefe fina31_0
+      name: Mono_Attack1.2_0
       rect:
         serializedVersion: 2
-        x: 221
+        x: 0
         y: 0
-        width: 70
-        height: 184
+        width: 152
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48066ba133efc5cb0800000000000000
-      internalID: -4873741201276772220
+      spriteID: c25eb3c8613b285c0800000000000000
+      internalID: -4214609391841974996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jefe fina31_1
+      name: Mono_Attack1.2_1
       rect:
         serializedVersion: 2
-        x: 574
+        x: 200
         y: 0
-        width: 71
-        height: 189
+        width: 154
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d40f0fdcfc381ba0800000000000000
-      internalID: -6118073037011090221
+      spriteID: aad52e32e6d1a43a0800000000000000
+      internalID: -6680494738365063766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jefe fina31_2
+      name: Mono_Attack1.2_2
       rect:
         serializedVersion: 2
-        x: 938
+        x: 402
         y: 0
-        width: 71
-        height: 163
+        width: 154
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b24799841878cac60800000000000000
-      internalID: 7830782841428997163
+      spriteID: b78506e722a1e01d0800000000000000
+      internalID: -3382737534657210245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Attack1.2_3
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 0
+        width: 154
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb6f328422000e50800000000000000
+      internalID: 6773416195392498679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Attack1.2_4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 0
+        width: 198
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e0091d9ef3bae80800000000000000
+      internalID: -8166363225830453723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Attack1.2_5
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 0
+        width: 149
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cd9477bcdc752b0800000000000000
+      internalID: -5595777738221167506
       vertices: []
       indices: 
       edges: []
@@ -185,9 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jefe fina31_0: -4873741201276772220
-      jefe fina31_1: -6118073037011090221
-      jefe fina31_2: 7830782841428997163
+      Mono_Attack1.2_0: -4214609391841974996
+      Mono_Attack1.2_1: -6680494738365063766
+      Mono_Attack1.2_2: -3382737534657210245
+      Mono_Attack1.2_3: 6773416195392498679
+      Mono_Attack1.2_4: -8166363225830453723
+      Mono_Attack1.2_5: -5595777738221167506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
