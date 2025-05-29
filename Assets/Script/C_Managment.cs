@@ -17,10 +17,13 @@ public class C_Managment : MonoBehaviour
     public static C_Managment Instance { get; private set; }
 
     public GameObject Player;
+    public GameObject Boss;
     public C_PlayerController PlayerController { get; private set; }
     public C_PlayerLife PlayerLife { get; private set; }
     public C_PlayerLaunchProjectiles PlayerLaunchProjectiles { get; private set; }
     public C_BossLife BossLife { get; private set; }
+    public C_BossPhases BossPhases { get; private set; }
+    public C_BossManager BossManager { get; private set; }
     public C_LevelSetup LevelSetup { get; private set; }
     private bool bIsPause;
     [SerializeField] private int AuxCollectibles;
@@ -49,6 +52,11 @@ public class C_Managment : MonoBehaviour
         }
         CurrentLevelSettings();
     }
+    public void AddItems()
+    {
+        Items = new List<C_Item>(FindObjectsByType<C_Item>(FindObjectsSortMode.None));
+    }
+
     //Setters
     public void SetCurrentLevel(ELevel Level) { CurrentLevel = Level; }
     public void SetSceneToLoad(string Scene) { SceneNameToLoad = Scene; }
@@ -77,7 +85,7 @@ public class C_Managment : MonoBehaviour
         bIsPause = false;
         if (CurrentLevel != ELevel.EL_Minigame)
         {
-            Items = new List<C_Item>(FindObjectsByType<C_Item>(FindObjectsSortMode.None));
+            AddItems();
         }
     }
     
@@ -105,11 +113,14 @@ public class C_Managment : MonoBehaviour
                 Enemies = new List<C_EnemyController>(FindObjectsByType<C_EnemyController>(FindObjectsSortMode.None));
                 break;
             case ELevel.EL_BossLevel:
-                BossLife = FindFirstObjectByType<C_BossLife>();
+                Boss = FindFirstObjectByType<C_BossLife>().gameObject;
+                BossLife = Boss.GetComponent<C_BossLife>();
+                BossPhases = Boss.GetComponent<C_BossPhases>();
+                BossManager = FindFirstObjectByType<C_BossManager>();
                 break;
             case ELevel.EL_Minigame:
                 Debug.Log("Minijuego");
-                IncreaseCollectiblesCounter();
+                
                 break;
         }
     }
@@ -138,8 +149,6 @@ public class C_Managment : MonoBehaviour
         bIsPause = !bIsPause;
 
     }
-
-    
 
     private void SoundManagment()
     {

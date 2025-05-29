@@ -7,8 +7,6 @@ public class C_ProjectileMiniGame : C_Projectile
 {
     private GameObject LauncheManager;
     private C_LauncherManager Hit;
-    [SerializeField] private int DirectionRotation;
-    [SerializeField] private float RotationSpeed;
     [SerializeField] private float minForce;
     [SerializeField] private float maxForce;
 
@@ -23,20 +21,14 @@ public class C_ProjectileMiniGame : C_Projectile
             SpeedY = Random.Range(minForce, maxForce);
         }
         base.Start();
-
     }
 
-    private void FixedUpdate()
+    protected override void FixedUpdate()
     {
-
-        transform.Rotate(Vector3.forward, RotationSpeed * DirectionRotation * Time.deltaTime);
+        base.FixedUpdate();
     }
 
-    private void Direction()
-    {
-        int Aux = Random.Range(1, 10);
-        DirectionRotation = (Aux >= 6) ? 1 : -1;  
-    }
+    
 
     private void OnMouseDown()
     {
