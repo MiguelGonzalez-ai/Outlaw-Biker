@@ -79,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 2
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,7 +93,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -484,7 +484,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tanqueta_Jefe_Final_0: -3137745176097482326
+      Tanqueta_Jefe_Final_1: 6496924097741586596
+      Tanqueta_Jefe_Final_10: -8362363071401907705
+      Tanqueta_Jefe_Final_11: 8352430799477699904
+      Tanqueta_Jefe_Final_12: -8713577104476429237
+      Tanqueta_Jefe_Final_13: -7969853372096815946
+      Tanqueta_Jefe_Final_14: -8449349780589823264
+      Tanqueta_Jefe_Final_2: -8149203285555798862
+      Tanqueta_Jefe_Final_3: 8412450659706917760
+      Tanqueta_Jefe_Final_4: 8644069512593745941
+      Tanqueta_Jefe_Final_5: -479292618019979138
+      Tanqueta_Jefe_Final_6: 7629102925749477634
+      Tanqueta_Jefe_Final_7: 2400260873637362848
+      Tanqueta_Jefe_Final_8: 8842634962086552832
+      Tanqueta_Jefe_Final_9: -7872697108153484277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,7 +6,7 @@ public class C_BossManager : MonoBehaviour
     private C_PlayerLife PlayerLife => C_Managment.Instance.PlayerLife;
     private C_BossLife BossLife => C_Managment.Instance.BossLife;
     private C_BossPhases BossPhases => C_Managment.Instance.BossPhases;
-    [SerializeReference]private bool bCanSpawn = true;
+    [SerializeReference] private bool bCanSpawn = true;
 
     [SerializeField] private GameObject BoxProjectiles;
     //Public
@@ -17,7 +17,7 @@ public class C_BossManager : MonoBehaviour
 
     //setter
     public void SetCanSpawn(bool Can) { bCanSpawn = Can; }
-    
+
     void Update()
     {
         ManageItems();
@@ -36,7 +36,7 @@ public class C_BossManager : MonoBehaviour
 
     private void SpawnPlayerProjectiles()
     {
-        if(BoxProjectiles != null)
+        if (BoxProjectiles != null)
         {
             float RandomX = Random.Range(-10.78f, 11.49f);
             Vector3 RandomSpawnPoint = new(RandomX, -2.69f, 0);
@@ -54,5 +54,5 @@ public class C_BossManager : MonoBehaviour
             BossLife.SetBossLife(0);
         }
     }
-    
+
 }

@@ -13,7 +13,7 @@ public class C_BossLife : MonoBehaviour
 
     void Start()
     {
-        if(BossLife != null)
+        if (BossLife != null)
         {
             BossLife.fillAmount = 1;
         }

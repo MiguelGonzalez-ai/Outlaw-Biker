@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 104
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tanqueta_Peor_0: 615008382544546166
+      Tanqueta_Peor_1: 8996485811146454212
+      Tanqueta_Peor_2: 6003183563682952257
+      Tanqueta_Peor_3: 8353351500947266787
+      Tanqueta_Peor_4: 1103723084363488972
+      Tanqueta_Peor_5: -2090215467714331885
+      Tanqueta_Peor_6: 2200178786551110985
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

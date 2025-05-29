@@ -111,6 +111,7 @@ public class ArmManager : MonoBehaviour
             case ERoundArm.ERA_ArmWon:
                 Debug.Log("Ganaste");
                 TextInstructions.text = "You Won!! ";
+                StartCoroutine(C_Managment.Instance.ChangeScene(WaitTimeToChangeScene));
                 break;
         }
     }
@@ -160,7 +161,7 @@ public class ArmManager : MonoBehaviour
         if (handAnimator != null)
         {
             float barValue = Bar.fillAmount; // Obtén el valor actual de la barra
-            Debug.Log("BarProgress enviado al Animator: " + barValue); // Muestra el valor en la consola
+            
             handAnimator.SetFloat("BarProgress", barValue); // Envía el valor al Animator
         }
     }

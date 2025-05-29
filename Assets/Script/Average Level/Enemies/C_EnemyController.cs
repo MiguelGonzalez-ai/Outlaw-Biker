@@ -50,7 +50,7 @@ public class C_EnemyController : MonoBehaviour
         if (bContact && EnemyState == EEnemyState.EES_Idle) //Si el enemigo tiene contacto visual y se encuentra inactivo, ataca
         {
             EnemyState = EnemyState = EEnemyState.EES_Attacking;
-            InvokeRepeating("SpawnProjectile", 1f, 0.2f);
+            InvokeRepeating("SpawnProjectile", 2f, 1f);
         }
         else if (!bContact && EnemyState == EEnemyState.EES_Attacking) //Si el enemigo ya no tiene contacto visual y esta atacando, dejara de hacerlo
         {
