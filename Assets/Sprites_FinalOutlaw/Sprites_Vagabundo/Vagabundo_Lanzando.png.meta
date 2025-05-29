@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vagabundo_Lanzando_0: -8738782352772747341
+      Vagabundo_Lanzando_1: 1873293418711250089
+      Vagabundo_Lanzando_2: 4757542582900990519
+      Vagabundo_Lanzando_3: -37187768939885610
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

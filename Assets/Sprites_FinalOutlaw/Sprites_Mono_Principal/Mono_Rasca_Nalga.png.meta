@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mono_Rasca_Nalga_0: 7688592471450831111
+      Mono_Rasca_Nalga_1: 8938475177474012415
+      Mono_Rasca_Nalga_10: -8216187943408460844
+      Mono_Rasca_Nalga_2: 8872140370746354110
+      Mono_Rasca_Nalga_3: 5871033603457951602
+      Mono_Rasca_Nalga_4: -3141125592117959281
+      Mono_Rasca_Nalga_5: -6761975245064070622
+      Mono_Rasca_Nalga_6: 3068039918908427589
+      Mono_Rasca_Nalga_7: -7431087233769813763
+      Mono_Rasca_Nalga_8: 4056940659744043455
+      Mono_Rasca_Nalga_9: -1507900214325787694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
