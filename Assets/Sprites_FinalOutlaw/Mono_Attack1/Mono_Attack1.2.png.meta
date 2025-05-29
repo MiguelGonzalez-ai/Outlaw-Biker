@@ -260,17 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/Sprites_FinalOutlaw/Mono_Attack1/Mono_Attack1.2.png.meta
       Mono_Attack1.2_0: -4214609391841974996
       Mono_Attack1.2_1: -6680494738365063766
       Mono_Attack1.2_2: -3382737534657210245
       Mono_Attack1.2_3: 6773416195392498679
       Mono_Attack1.2_4: -8166363225830453723
       Mono_Attack1.2_5: -5595777738221167506
-=======
-      inicio-salir_0: 8751207683132933958
-      inicio-salir_1: 7680699071558416861
->>>>>>> Stashed changes:Assets/imagenes/props/inicio-salir.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
