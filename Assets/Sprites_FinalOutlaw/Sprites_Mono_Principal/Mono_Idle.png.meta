@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 5d37111f21088e544aa64ab5298d8d99
+guid: 0c733ac2804d2e04bb2eac4eb78a28aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3241556694599369520
-    second: Manos_85_0
+      213: 2715339063172945771
+    second: Mono_Idle_0
   - first:
-      213: 4558567655180318482
-    second: Manos_85_1
+      213: 2170505317025492083
+    second: Mono_Idle_1
+  - first:
+      213: 3008125441092021677
+    second: Mono_Idle_2
+  - first:
+      213: 170702472083257131
+    second: Mono_Idle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manos_85_0
+      name: Mono_Idle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 118
-        width: 2280
-        height: 882
+        y: 0
+        width: 133
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03382e4a3a25cfc20800000000000000
-      internalID: 3241556694599369520
+      spriteID: b675a21dd72dea520800000000000000
+      internalID: 2715339063172945771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Manos_85_1
+      name: Mono_Idle_1
       rect:
         serializedVersion: 2
-        x: 2724
+        x: 166
         y: 0
-        width: 2276
-        height: 878
+        width: 135
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 217bb9b4129434f30800000000000000
-      internalID: 4558567655180318482
+      spriteID: 37ca664061f2f1e10800000000000000
+      internalID: 2170505317025492083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 0
+        width: 128
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dadea14a6220fb920800000000000000
+      internalID: 3008125441092021677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mono_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 0
+        width: 132
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27bdc27ef47e5200800000000000000
+      internalID: 170702472083257131
       vertices: []
       indices: 
       edges: []
@@ -159,9 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Manos_85_0: 3241556694599369520
-      Manos_85_1: 4558567655180318482
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

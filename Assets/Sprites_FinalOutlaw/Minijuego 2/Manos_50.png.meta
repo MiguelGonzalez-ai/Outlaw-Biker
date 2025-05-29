@@ -107,11 +107,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 79
-        width: 2052
-        height: 921
+        y: 32
+        width: 2488
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,12 +128,12 @@ TextureImporter:
       name: Manos_50_1
       rect:
         serializedVersion: 2
-        x: 2678
+        x: 3007
         y: 0
-        width: 2354
-        height: 915
+        width: 2485
+        height: 963
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3b6de2bc91d08024c93d1f4d6c28b21d
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Manos_50_0: 2307187008165336321
+      Manos_50_1: -6808658650633537029
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
