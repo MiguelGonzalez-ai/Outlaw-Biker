@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mono_Attack1.2_0: -4214609391841974996
+      Mono_Attack1.2_1: -6680494738365063766
+      Mono_Attack1.2_2: -3382737534657210245
+      Mono_Attack1.2_3: 6773416195392498679
+      Mono_Attack1.2_4: -8166363225830453723
+      Mono_Attack1.2_5: -5595777738221167506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

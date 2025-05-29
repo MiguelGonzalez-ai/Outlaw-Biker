@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      jefe fina21_0: -6350816154671486570
+      jefe fina21_1: 4131641865484389834
+      jefe fina21_2: 6978122483565650860
+      jefe fina21_3: 6791151596038651510
+      jefe fina21_4: -1428603882800251195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,10 +12,9 @@ public class C_EnemysProjectile : C_Projectile
 {
     private C_PlayerLife Life => C_Managment.Instance.PlayerLife;
     [SerializeField] private float Damage;
-    [SerializeField] private float RotationSpeed;
     
 
-    private void FixedUpdate()
+    protected override void FixedUpdate()
     {
         transform.Rotate(-Vector3.forward, RotationSpeed * Side * Time.deltaTime);
     }

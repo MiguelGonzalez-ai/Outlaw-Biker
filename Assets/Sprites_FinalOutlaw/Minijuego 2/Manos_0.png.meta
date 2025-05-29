@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: c94ea4d0404456042918a68330b80eb2
+guid: 2b90d09c0fcc86444a455dbe619b64ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3626644392948778142
-    second: Mono_Attack1002_0
+      213: 6155539653620453997
+    second: Manos_0_0
+  - first:
+      213: 6035680733243696835
+    second: Manos_0_1
+  - first:
+      213: -6079581340461109344
+    second: Manos_0_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mono_Attack1002_0
+      name: Manos_0_0
       rect:
         serializedVersion: 2
-        x: 209
-        y: 59
-        width: 145
-        height: 217
+        x: 0
+        y: 114
+        width: 2631
+        height: 886
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26b30afa3229badc0800000000000000
-      internalID: -3626644392948778142
+      spriteID: d62d0e693bedc6550800000000000000
+      internalID: 6155539653620453997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manos_0_1
+      rect:
+        serializedVersion: 2
+        x: 3204
+        y: 0
+        width: 2629
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6e8a206ab03c350800000000000000
+      internalID: 6035680733243696835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manos_0_2
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 84
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afe8ba5bfcf0aba0800000000000000
+      internalID: -6079581340461109344
       vertices: []
       indices: 
       edges: []

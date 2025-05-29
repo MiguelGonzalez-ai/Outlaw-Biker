@@ -11,7 +11,7 @@ public class C_PlayerController : MonoBehaviour
         ESP_Run,
         ESP_Attacking
     }
-
+    private ELevel CurrentLevel => C_Managment.Instance.GetCurrentLevel();
     private Rigidbody2D rb;
     private Animator Animator;
     private float XInput; //Entradas valores en X
@@ -46,6 +46,7 @@ public class C_PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (bWinner) return;
         Horizontal = Input.GetAxisRaw("Horizontal");
         Animator.SetBool("Running", Horizontal != 0.0f);
         Animator.SetBool("Jumping",!IsGrounded());
@@ -78,7 +79,7 @@ public class C_PlayerController : MonoBehaviour
         XInput = Input.GetAxis("Horizontal");
         Vector2 move = new Vector2(XInput * Speed * Time.deltaTime, rb.linearVelocity.y);
         rb.linearVelocity = move;
-
+        
     }
 
     /*
@@ -113,10 +114,21 @@ public class C_PlayerController : MonoBehaviour
      */
     private void WinnerMovement()
     {
+        if (CurrentLevel == ELevel.EL_AverageLevel)
+        {
+            MovePlayerOut();
+        }
+        else if(CurrentLevel == ELevel.EL_BossLevel)
+        {
+            //PONER ANIMACION/COMPORTAMIENTO DE VICTORIA
+        }
+    }
+
+    private void MovePlayerOut()
+    {
         float i = 0.001f;
         rb.constraints = RigidbodyConstraints2D.FreezePositionY;
         transform.position = new Vector2(transform.position.x + i, FinalHeight.transform.position.y);
-        //SceneManager.LoadScene("Level2");
     }
 
     /*

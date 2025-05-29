@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: a999022539fef7b41a9f2053b554c927
+guid: bc3cbc65af9bf2a4da4ba57b44d29b8c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8528776357774763474
-    second: Mono_Attack1005_0
+      213: -1995180403775461167
+    second: Manos_15_0
+  - first:
+      213: 5187821507458598355
+    second: Manos_15_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mono_Attack1005_0
+      name: Manos_15_0
       rect:
         serializedVersion: 2
-        x: 220
-        y: 58
-        width: 188
-        height: 216
+        x: 0
+        y: 83
+        width: 2625
+        height: 916
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2ad51a0713b3a980800000000000000
-      internalID: -8528776357774763474
+      spriteID: 1d8a4226ef1bf44e0800000000000000
+      internalID: -1995180403775461167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manos_15_1
+      rect:
+        serializedVersion: 2
+        x: 3197
+        y: 0
+        width: 2622
+        height: 912
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5833ebc28def740800000000000000
+      internalID: 5187821507458598355
       vertices: []
       indices: 
       edges: []

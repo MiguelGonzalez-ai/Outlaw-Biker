@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      molotov_0: 308145959380911688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

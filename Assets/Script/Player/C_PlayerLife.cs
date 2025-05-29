@@ -20,6 +20,9 @@ public class C_PlayerLife : MonoBehaviour
         PlayerLife.fillAmount = Mathf.Clamp(PlayerLife.fillAmount - Amount, 0, 1);
     }
 
+    //Getter
+    public float GetPlayerLife() { return PlayerLife.fillAmount; }
+
 
     void Start()
     {
@@ -45,6 +48,7 @@ public class C_PlayerLife : MonoBehaviour
                 PlayerLife.fillAmount = 1;
                 break;
             case ELevel.EL_BossLevel:
+                C_Managment.Instance.BossManager.ChangeSceneBoss();
                 Destroy(gameObject);
                 break;
             default:

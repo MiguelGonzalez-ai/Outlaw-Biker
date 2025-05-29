@@ -1,25 +1,23 @@
 using UnityEngine;
 
-public class C_BossProjectile1 : MonoBehaviour
+public class C_BossProjectile1 : C_Projectile
 {
-    GameObject Target;
-    Transform TargetPosition; //Transformada del jugadaor
-    C_PlayerLife PlayerLife; //Permite acceder a la vida del personaje
-    Vector2 PositionA; //Posicion de lanzamiento
-    Vector2 PositionB; //Posicion del jugador con Vector2
-    float RunningTimeFrame;
-    float Time;
-    [SerializeField] float Duration;
-    [SerializeField] float Damage;
+    private GameObject Target => C_Managment.Instance.Player;
+    private Transform TargetPosition => Target.transform; //Transformada del jugadaor
+    private C_PlayerLife PlayerLife => C_Managment.Instance.PlayerLife; //Permite acceder a la vida del personaje
+    private Vector2 PositionA; //Posicion de lanzamiento
+    private Vector2 PositionB; //Posicion del jugador con Vector2
+    private float RunningTimeFrame;
+    private float Time;
+    [SerializeField] private float Duration;
+    [SerializeField] private float Damage;
     public AnimationCurve Trajectory;
 
-    void Start()
+    protected override void Start()
     {
-        Target = FindFirstObjectByType<C_PlayerController>().gameObject;
+        Direction();
         if (Target != null)
         {
-            TargetPosition = Target.GetComponent<Transform>();
-            PlayerLife = Target.GetComponent<C_PlayerLife>();
             PositionA = (Vector2)transform.position;
             PositionB = (Vector2)TargetPosition.position;
         }
@@ -35,6 +33,11 @@ public class C_BossProjectile1 : MonoBehaviour
         {
             Launching();
         }
+    }
+
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
     }
 
     private void CalculatingTime()

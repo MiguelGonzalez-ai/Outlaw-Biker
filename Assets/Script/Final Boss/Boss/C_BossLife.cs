@@ -9,6 +9,7 @@ public class C_BossLife : MonoBehaviour
      * Getter
      */
     public float GetBossLife() { return BossLife.fillAmount; }
+    public void SetBossLife(float Amount) { BossLife.fillAmount = Amount; }
 
     void Start()
     {
