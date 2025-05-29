@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 945d0289bf8e7e14fb4e91e120a7874d
+guid: 70bc978e788450a4cbdc5f44996dd653
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2016334469380030449
-    second: molotov1.2_0
+      213: 3241556694599369520
+    second: Manos_85_0
   - first:
-      213: -3064122303483027911
-    second: molotov1.2_1
+      213: 4558567655180318482
+    second: Manos_85_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: molotov1.2_0
+      name: Manos_85_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 25
-        width: 33
-        height: 27
+        x: 0
+        y: 118
+        width: 2280
+        height: 882
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ffb5c354857bfb10800000000000000
-      internalID: 2016334469380030449
+      spriteID: 03382e4a3a25cfc20800000000000000
+      internalID: 3241556694599369520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: molotov1.2_1
+      name: Manos_85_1
       rect:
         serializedVersion: 2
-        x: 58
-        y: 25
-        width: 8
-        height: 9
+        x: 2724
+        y: 0
+        width: 2276
+        height: 878
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93eda88dffc0a75d0800000000000000
-      internalID: -3064122303483027911
+      spriteID: 217bb9b4129434f30800000000000000
+      internalID: 4558567655180318482
       vertices: []
       indices: 
       edges: []
@@ -159,13 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Mono_Attack1.2_0: -4214609391841974996
-      Mono_Attack1.2_1: -6680494738365063766
-      Mono_Attack1.2_2: -3382737534657210245
-      Mono_Attack1.2_3: 6773416195392498679
-      Mono_Attack1.2_4: -8166363225830453723
-      Mono_Attack1.2_5: -5595777738221167506
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
