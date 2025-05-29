@@ -17,6 +17,8 @@ public class C_EnemyWeakness : MonoBehaviour
         {
             C_PlayerLife GiveDamage = collision.gameObject.GetComponent<C_PlayerLife>();
             GiveDamage.TakingDamage(0.2f);
+
+
         }
     }
 }

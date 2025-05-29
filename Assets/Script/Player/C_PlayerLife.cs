@@ -18,6 +18,7 @@ public class C_PlayerLife : MonoBehaviour
     public void TakingDamage(float Amount)
     {
         PlayerLife.fillAmount = Mathf.Clamp(PlayerLife.fillAmount - Amount, 0, 1);
+        StartCoroutine(C_Managment.Instance.PlayerController.GettingHurt(true));
     }
 
     //Getter

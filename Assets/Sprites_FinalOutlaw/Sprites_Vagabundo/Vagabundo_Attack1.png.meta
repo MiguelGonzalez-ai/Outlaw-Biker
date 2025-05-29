@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vagabundo_Attack1_0: 8543128903437587979
+      Vagabundo_Attack1_1: 4834066275432497647
+      Vagabundo_Attack1_2: -4765354215988485380
+      Vagabundo_Attack1_3: -2351011560927902915
+      Vagabundo_Attack1_4: -3216814855299569333
+      Vagabundo_Attack1_5: 160133890891186562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

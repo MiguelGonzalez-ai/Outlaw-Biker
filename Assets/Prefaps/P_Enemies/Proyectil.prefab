@@ -47,11 +47,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50ebfd75dab5f2e46ad75f92fb58fdc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DirectionRotation: 0
   WaitTime: 3
   SpeedX: 10
   SpeedY: 0
-  Damage: 0.2
   RotationSpeed: 180
+  Damage: 0.1
 --- !u!212 &5453768744493521750
 SpriteRenderer:
   m_ObjectHideFlags: 0

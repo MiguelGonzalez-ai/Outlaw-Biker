@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mono_Lanzando_0: 4068643211352046359
+      Mono_Lanzando_1: -7368779981771701804
+      Mono_Lanzando_2: -7749414177897290513
+      Mono_Lanzando_3: -8382895645499636382
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

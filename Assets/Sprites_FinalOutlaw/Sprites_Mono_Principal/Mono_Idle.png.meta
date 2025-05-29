@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mono_Idle_0: 2715339063172945771
+      Mono_Idle_1: 2170505317025492083
+      Mono_Idle_2: 3008125441092021677
+      Mono_Idle_3: 170702472083257131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

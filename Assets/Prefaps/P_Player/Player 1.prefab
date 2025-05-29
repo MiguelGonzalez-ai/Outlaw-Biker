@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StatePlayer: 0
   FinalHeight: {fileID: 0}
-  Speed: 400
+  Speed: 250
   JumpForce: 420
   GroundTouched: {fileID: 7941837601494548710}
   WhatIsGround:
@@ -146,7 +146,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -181828907702267046, guid: 92b51f01aef8f4749b2f75f58aca7ba8, type: 3}
+  m_Sprite: {fileID: 2715339063172945771, guid: 0c733ac2804d2e04bb2eac4eb78a28aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

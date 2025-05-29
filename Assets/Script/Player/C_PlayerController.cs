@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 
 //Clase maneja entradas de movimiento del jugador
 public class C_PlayerController : MonoBehaviour
@@ -9,7 +9,8 @@ public class C_PlayerController : MonoBehaviour
         ESP_Idle,
         ESP_Jump,
         ESP_Run,
-        ESP_Attacking
+        ESP_Attacking,
+        ESP_Hurt
     }
     private ELevel CurrentLevel => C_Managment.Instance.GetCurrentLevel();
     private Rigidbody2D rb;
@@ -24,7 +25,13 @@ public class C_PlayerController : MonoBehaviour
     [SerializeField] float JumpForce; //Fuerza de salto
     [SerializeField] Transform GroundTouched; //Suelo tocado
     [SerializeField] LayerMask WhatIsGround; //Donde se puede saltar
-    
+    public IEnumerator GettingHurt(bool bHurt)
+    {
+        Animator.SetBool("Hurt", bHurt);
+        yield return new WaitForSeconds(0.1f); //Detiene la ejecucion secuencial por 2s
+        Animator.SetBool("Hurt", false);
+
+    }
 
     /*
      * Getters y setters

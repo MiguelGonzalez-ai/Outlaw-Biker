@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mono_Celebracion_0: 2246102845361831673
+      Mono_Celebracion_1: -7391419388758099644
+      Mono_Celebracion_2: 3228105803033877535
+      Mono_Celebracion_3: -8079017638918990730
+      Mono_Celebracion_4: 4327871085081733971
+      Mono_Celebracion_5: 3858740816705883511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
