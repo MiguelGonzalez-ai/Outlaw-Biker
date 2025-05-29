@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b5bcf40d08a21dd438d2571587172471
+guid: d3a6d5149281c0a449e4626002b9a75a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5288441516514123843
-    second: Vida png_0
+      213: -7232455959654465894
+    second: Manos_65_0
+  - first:
+      213: 6310021162430631057
+    second: Manos_65_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vida png_0
+      name: Manos_65_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 12
-        width: 112
-        height: 22
+        x: 0
+        y: 108
+        width: 2559
+        height: 892
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 340a0473a81546940800000000000000
-      internalID: 5288441516514123843
+      spriteID: a9e7327bf9721ab90800000000000000
+      internalID: -7232455959654465894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manos_65_1
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 0
+        width: 2555
+        height: 889
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c00e7b0d2b19750800000000000000
+      internalID: 6310021162430631057
       vertices: []
       indices: 
       edges: []
@@ -134,12 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<< Updated upstream:Assets/imagenes/props/Vida png.png.meta
-      Vida png_0: 5288441516514123843
-=======
-      vida externa2_0: -7583752155227437265
->>>>>>> Stashed changes:Assets/imagenes/props/vida externa2.png.meta
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

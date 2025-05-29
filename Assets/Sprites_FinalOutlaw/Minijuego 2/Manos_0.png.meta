@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: b5bcf40d08a21dd438d2571587172471
+guid: b2923af51e03f5c469e4d7166630aba4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5288441516514123843
-    second: Vida png_0
+      213: 6155539653620453997
+    second: Manos_0_0
+  - first:
+      213: 6035680733243696835
+    second: Manos_0_1
+  - first:
+      213: -6079581340461109344
+    second: Manos_0_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +106,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vida png_0
+      name: Manos_0_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 12
-        width: 112
-        height: 22
+        x: 0
+        y: 114
+        width: 2631
+        height: 886
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 340a0473a81546940800000000000000
-      internalID: 5288441516514123843
+      spriteID: d62d0e693bedc6550800000000000000
+      internalID: 6155539653620453997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manos_0_1
+      rect:
+        serializedVersion: 2
+        x: 3204
+        y: 0
+        width: 2629
+        height: 912
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6e8a206ab03c350800000000000000
+      internalID: 6035680733243696835
       vertices: []
       indices: 
       edges: []
@@ -125,7 +153,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 60a31602592bded4caffe58b2b5f02db
     internalID: 0
     vertices: []
     indices: 
@@ -135,11 +163,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/imagenes/props/Vida png.png.meta
-      Vida png_0: 5288441516514123843
-=======
-      vida externa2_0: -7583752155227437265
->>>>>>> Stashed changes:Assets/imagenes/props/vida externa2.png.meta
+      Manos_0_0: 6155539653620453997
+      Manos_0_1: 6035680733243696835
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

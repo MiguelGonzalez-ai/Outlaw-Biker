@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b5bcf40d08a21dd438d2571587172471
+guid: 5b2272b1c0722f542aa64579fb72bbcd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5288441516514123843
-    second: Vida png_0
+      213: 3019396044431293795
+    second: vida interna2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vida png_0
+      name: vida interna2_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 12
-        width: 112
-        height: 22
+        x: 56
+        y: 182
+        width: 83
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 340a0473a81546940800000000000000
-      internalID: 5288441516514123843
+      spriteID: 36dfb8874bc07e920800000000000000
+      internalID: 3019396044431293795
       vertices: []
       indices: 
       edges: []
@@ -135,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/imagenes/props/Vida png.png.meta
-      Vida png_0: 5288441516514123843
-=======
-      vida externa2_0: -7583752155227437265
->>>>>>> Stashed changes:Assets/imagenes/props/vida externa2.png.meta
+      vida interna2_0: 3019396044431293795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

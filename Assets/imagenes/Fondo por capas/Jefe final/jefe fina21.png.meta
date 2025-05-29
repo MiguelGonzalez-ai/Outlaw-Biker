@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: b5bcf40d08a21dd438d2571587172471
+guid: 9ee0ec3d6f5d060459d6574266e1f40a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5288441516514123843
-    second: Vida png_0
+      213: -6350816154671486570
+    second: jefe fina21_0
+  - first:
+      213: 4131641865484389834
+    second: jefe fina21_1
+  - first:
+      213: 6978122483565650860
+    second: jefe fina21_2
+  - first:
+      213: 6791151596038651510
+    second: jefe fina21_3
+  - first:
+      213: -1428603882800251195
+    second: jefe fina21_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vida png_0
+      name: jefe fina21_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 12
-        width: 112
-        height: 22
+        x: 114
+        y: 0
+        width: 93
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 340a0473a81546940800000000000000
-      internalID: 5288441516514123843
+      spriteID: 6996efafa5e5dd7a0800000000000000
+      internalID: -6350816154671486570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe fina21_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 93
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd4453e26a865930800000000000000
+      internalID: 4131641865484389834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe fina21_2
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 0
+        width: 80
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3e8185d6547d060800000000000000
+      internalID: 6978122483565650860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe fina21_3
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 93
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ef5b145640f3e50800000000000000
+      internalID: 6791151596038651510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jefe fina21_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 93
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce72f076549c2ce0800000000000000
+      internalID: -1428603882800251195
       vertices: []
       indices: 
       edges: []
@@ -135,11 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/imagenes/props/Vida png.png.meta
-      Vida png_0: 5288441516514123843
-=======
-      vida externa2_0: -7583752155227437265
->>>>>>> Stashed changes:Assets/imagenes/props/vida externa2.png.meta
+      jefe fina21_0: -6350816154671486570
+      jefe fina21_1: 4131641865484389834
+      jefe fina21_2: 6978122483565650860
+      jefe fina21_3: 6791151596038651510
+      jefe fina21_4: -1428603882800251195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
